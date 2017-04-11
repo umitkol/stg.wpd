@@ -1,0 +1,157 @@
+.wpd-input-number
+	position relative
+	
+	&:hover
+		box-shadow 0 0 2px 1px $color8
+	
+	input
+		display block
+		height 23px
+		width 100%
+		line-height 21px
+		background linear-gradient(top, $color19, $color20)
+		border 1px solid $color4
+		border-radius 2px
+		box-sizing border-box
+		color $color13
+		font-size 11px
+		padding 0 15px 0 5px
+		
+		&:focus,
+		.wpd-input--focus
+			outline none
+			box-shadow: 0 0 1px 1px $color16_6;
+		
+	&__controls
+		position absolute
+		width 9px
+		right 1px
+		top 1px
+		z-index 2
+		
+		span 
+			display block
+			height 10px
+			background linear-gradient(top, $color10, $color21)
+			text-align center
+			color $color13
+			font-size 8px
+			opacity .8
+			border-left 1px solid $color4
+			after()
+			
+			&:after
+				font-family 'FontAwesome'
+				display block
+				text-align center
+				width 100%
+				
+			&.up
+				border-bottom 1px solid $color4
+				&:after
+					content "\f0d8"
+			&.down:after 
+				content "\f0d7"
+				
+			&:hover
+				opacity 1
+				cursor pointer
+				
+			&:active
+				color $color12
+
+	&__unit
+		position absolute
+		left auto
+		right 11px
+		top 4px
+		color $color13
+		
+		.output
+			font-size 11px
+			line-height 15px
+			height 15px
+			text-align center
+			float right
+			padding 0 4px
+			border-radius 3px
+			opacity .4
+			position relative
+			box-shadow inset 0 0 0 1px $color5_4
+			
+			&:hover
+				background $color1
+				cursor pointer
+			
+		ul
+			display none
+			border 1px solid $color4
+			border-radius 3px
+			border-top-right-radius 0
+			background $color1
+			position absolute
+			z-index $dropdown_zIndex
+			top 15px
+			right 0
+			
+			li 
+				color $color13
+				font-size 11px
+				padding 5px 7px
+				border 1px solid $color5_4
+				border-top none
+				
+				&:hover
+					background $color10
+					cursor pointer
+					
+				&:first-child
+					border-top-left-radius 2px
+					border-top-right-radius 2px
+					
+				&:last-child
+					border-bottom-left-radius 2px
+					border-bottom-right-radius 2px
+			
+		&--active
+			.output
+				opacity 1
+				background $color1
+				border 1px solid $color4
+				border-bottom none
+				border-bottom-left-radius 0
+				border-bottom-right-radius 0
+				z-index $dropdown_zIndex + 1
+				
+			ul
+				display block
+				
+	&--small
+		float left
+		width 60px
+
+	&--disabled
+		opacity $disabled_opacity
+		cursor not-allowed
+		
+		input
+			cursor not-allowed
+			
+		.wpd-input-number__controls,
+		.wpd-input-number__controls span,
+		.wpd-input-number__unit,
+		.wpd-input-number__unit .output
+			cursor not-allowed
+			
+		&:hover
+			box-shadow none
+		
+		.wpd-input-number__unit--active
+			.output
+				box-shadow none
+				background none
+				border none
+				
+			ul
+				display none
+			

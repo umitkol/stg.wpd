@@ -1,0 +1,151 @@
+.wpd-dropdown
+	position relative
+	width 100%
+	font-size 11px
+	
+	&__output
+		background: linear-gradient(top, $color15, $color10);
+		width 100%
+		border 1px solid $color5
+		border-radius 2px
+		height 24px
+		padding 0 22px 0 5px
+		color $color13
+		position relative
+		cursor pointer
+		line-height 22px
+		box-sizing border-box
+		overflow ellipsis
+		after()
+		
+		&:after
+			font-family FontAwesome;
+			content "\f0dd"
+			font-size 11px
+			color $color12
+			left auto
+			top 0 
+			right 8px
+			
+		&:hover
+			background $color15
+			color $color12
+		
+	&__list
+		display none
+		background $color10
+		color $color12
+		border 1px solid $color5
+		position absolute
+		top 100%
+		margin-top -1px
+		width 100%
+		box-sizing border-box
+		max-height 134px
+		overflow-y auto
+		z-index $dropdown_zIndex
+		
+		li 
+			padding 5px
+			cursor pointer
+			
+			&.passive
+				//color $color17
+				opacity .3
+			
+			&:hover
+				background $color16
+			
+			&.disabled
+				opacity $disabled_opacity
+				cursor not-allowed
+				
+				&:hover
+					background none
+					
+	&--optgroup
+		.wpd-dropdown__list
+			li
+				&.optgroup-label
+					font-weight 700
+					
+					&:hover
+						background $color10
+						cursor default
+						
+				.optgroup-list
+					margin-top 5px
+					
+					li
+						font-weight 400
+						padding-left 20px
+						margin-left -5px
+						margin-right -5px 
+						
+						/*&:last-child
+							padding-bottom 0*/
+								
+	&--grid
+		.wpd-dropdown__output
+			background none
+			border-color transparent
+			
+		.wpd-dropdown__list
+			width 48px
+			
+			li
+				padding-right 16px
+				
+				&.selected
+					after()
+					
+					&:after
+						font-family 'FontAwesome'
+						content "\f00c"
+						top 3px
+						left auto
+						right 5px
+						
+	&--sort
+		.wpd-dropdown__output
+			background none
+			border-color transparent
+			
+		.wpd-dropdown__list
+			width 135px
+			
+			li
+				padding-right 16px
+				
+				&.selected
+					after()
+					
+					&:after
+						font-family 'FontAwesome'
+						content "\f00c"
+						top 3px
+						left auto
+						right 5px
+
+	&--active
+		.wpd-dropdown__output
+			background $color15
+			color $color12
+			
+		&.wpd-dropdown--grid,
+		&.wpd-dropdown--sort
+			.wpd-dropdown__output
+				background transparent
+			
+		.wpd-dropdown__list
+			display block
+			
+					
+	&--disabled
+		opacity $disabled_opacity
+		
+		.wpd-dropdown__output
+			cursor not-allowed
+		
+		.wpd-dropdown__list
+			display none !important 

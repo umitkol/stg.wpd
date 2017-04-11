@@ -1,0 +1,77 @@
+.wpd-anchor
+	font-size 11px
+	color $color13
+	display inline-block
+	text-decoration none
+	
+	&:active,
+	&:focus
+		color $color13
+	
+	&--has-icon
+		line-height 23px
+		
+		i
+			margin-right 6px
+		
+		span
+			line-height 1.2em
+			display inline-block
+			border-bottom 1px dotted $color13
+			
+		&:hover
+			color $color12
+			
+			span
+				border-bottom-style solid
+				
+	&--local
+		color $color16
+		border-bottom 1px dotted $color16
+		cursor pointer
+    
+		&:hover
+			color $color16
+			border-bottom-style solid
+      
+	&--global
+		color $color23
+		border-bottom 1px dotted $color23
+		cursor pointer
+
+		&:hover
+			color $color23
+			border-bottom-style solid
+			
+	&--underlined
+		text-decoration underline
+		
+		&:hover
+			text-decoration underline
+			
+	&--arrow
+		padding-right 15px
+		after()
+		
+		&:after
+			font-family 'FontAwesome'
+			content "\f0d7"
+			top 0
+			left auto
+			right 0
+			font-size 12px
+			color $color13
+			
+		&:hover
+			&:after
+				color $color12
+				
+		&.wpd-anchor--active
+			color $color12
+			
+			&:after
+				content "\f0d8"
+				color $color12
+				
+
+

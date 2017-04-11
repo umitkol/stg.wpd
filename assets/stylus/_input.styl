@@ -1,0 +1,19 @@
+.input
+  // for chrome, hide placeholder text on focus
+  &:focus::-webkit-input-placeholder
+    color transparent
+
+  &--regular
+    border 1px solid $silver
+    box-sizing(border-box)
+    display block
+    width 100%
+    height 38px
+    padding 0 14px
+    font-size 12px
+    line-height 38px
+    outline 0
+    border-radius 2px
+    background $white
+    placeholder(rgba(0, 0, 0, .83))
+    

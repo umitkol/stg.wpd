@@ -1,0 +1,19 @@
+[    
+    {
+        "settings":{
+            "sectionID":"",
+            "visible":{
+                "desktop":true,
+                "tablet":true,
+                "mobile":true
+            }
+        },
+        "children": [],
+        "classes":[],
+        "parent":null,
+        "name":"Workspace",
+        "tag":"div",
+        "id":"workspace", 
+        "attributes":[]
+    }
+]

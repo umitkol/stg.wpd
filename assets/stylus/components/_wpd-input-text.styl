@@ -1,0 +1,109 @@
+input.wpd-input-text
+	display block
+	height 23px
+	width 100%
+	line-height 21px
+	background linear-gradient(top, $color19, $color20)
+	border 1px solid $color4
+	border-radius 2px
+	box-sizing border-box
+	color $color13
+	font-size 11px
+	padding 0 15px 0 5px
+	placeholder $color9 
+	
+	&--b
+		height 30px
+		line-height 28px
+		background $color24
+		border 1px solid $color19
+		border-radius 2px 
+		padding 0 7px
+  	box-shadow $box_shadow_light 
+	
+	&:hover
+		box-shadow 0 0 2px 1px $color8
+	
+	&:focus
+		outline none
+		box-shadow none
+		box-shadow: 0 0 1px 1px $color16_6;
+	
+	&:disabled
+		opacity $disabled_opacity
+		cursor not-allowed
+	
+		&:hover
+			box-shadow none
+			
+.wpd-input-selector
+	display block
+	width 100%
+	background linear-gradient(top, $color19, $color20)
+	border 1px solid $color4
+	border-radius 2px
+	box-sizing border-box
+	color $color13
+	font-size 11px
+	padding 2px 15px 2px 5px
+	height auto
+	line-height 24px
+	min-height 30px
+	box-shadow inset 0px 0px 5px 0px rgba(0,0,0,0.3)
+	clearfix()
+	
+	&:hover
+		box-shadow 0 0 2px 1px $color8
+	
+	&:focus
+		outline none
+		box-shadow none
+		box-shadow: 0 0 1px 1px $color16_6;
+	
+	&:disabled
+		opacity $disabled_opacity
+		cursor not-allowed
+	
+		&:hover
+			box-shadow none
+			
+.wpd-input-text-edit
+	position relative
+	
+	&__button
+		display block
+		height 100%
+		after(type=absolute)
+		width 25px
+		right 0
+		top 0
+		line-height 21px
+		color $color13
+		font-size 11px
+		cursor pointer
+		text-align center
+		text-decoration none
+		
+		&:after
+			font-family 'FontAwesome'
+			content "\f040"
+			top 50%
+			line-height 1
+			margin-top -5px
+			left 7px
+			
+		&:hover
+			color $color12
+			box-shadow none
+			
+	.wpd-input-text
+		padding-right 25px
+			
+	&:hover
+		.wpd-input-text
+			box-shadow 0 0 2px 1px $color8
+			
+	&--focus
+		.wpd-input-text-edit__button
+			display none
+			  

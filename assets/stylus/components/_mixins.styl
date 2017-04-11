@@ -1,0 +1,62 @@
+_opacity(deg)
+    //-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+ degIE +")"
+    //filter: alpha(opacity=degIE)
+    -moz-opacity: deg
+    -khtml-opacity: deg
+    opacity: deg
+
+// Placeholder
+placeholder( $color )
+  &::-webkit-input-placeholder
+    color $color
+  &:-moz-placeholder
+    color $color
+  &::-moz-placeholder
+    color $color
+  &:-ms-input-placeholder
+    color $color
+    
+Arial( $size = 14px, $weight = 400, $style = normal, $spacing = 0em )
+  font-size $size
+  font-weight $weight
+  font-family 'Arial', 'Helvetica', 'sans-serif'
+  letter-spacing $spacing
+
+  if $style is italic
+    font-style italic
+  else
+    font-style normal
+
+
+// Align
+vertical-align-middle( $icon_height )
+  top 50%
+  margin-top floor($icon_height / -2)
+
+horizontal-align-middle( $icon_width )
+  left 50%
+  margin-left floor($icon_width / -2)
+
+absolute-middle( $icon_width, $icon_height )
+  position absolute
+  vertical-align-middle( $icon_height )
+  horizontal-align-middle( $icon_width )
+
+// Before & After
+before( $type = relative )
+  position $type
+  &:before
+    content " "
+    position absolute
+    display block
+    top 0
+    left 0
+
+after( $type = relative )
+  position $type
+  &:after
+    content " "
+    position absolute 
+    display block
+    top 0
+    left 0

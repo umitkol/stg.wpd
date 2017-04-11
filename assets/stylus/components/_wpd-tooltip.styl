@@ -1,0 +1,62 @@
+.wpd-tooltip
+	display none
+	background $color18
+	color $color12
+	font-size 11px
+	padding 3px 6px
+	border-radius 2px
+	after(type = absolute)
+	z-index $dropdown_zIndex
+	line-height 150%
+	margin-bottom 6px
+	
+	&:after
+		width 0
+		height 0
+		border-style solid
+		border-width 0 6px 6px 6px
+		border-color transparent transparent $color18 transparent
+		top -5px
+		left 50%
+		margin-left -6px
+
+	&.nowrap
+		white-space nowrap
+		top 0 !important
+	
+	&.pos-left
+		left 0
+		margin-right -6px
+		top 10px
+
+		&:after
+			border-width 6px 0 6px 6px
+			border-color transparent transparent transparent $color18
+			top 5px
+			left 0
+	
+	&.pos-right
+		left 100%
+		margin-right -6px
+		top 10px
+
+		&:after
+			border-width 6px 6px 6px 0
+			border-color transparent $color18 transparent transparent
+			top 5px
+			left 0
+	
+	&.pos-top
+		left 0
+		bottom 100%
+
+		&:after
+			border-width: 6px 6px 0 6px;
+			border-color: $color18 transparent transparent transparent;
+			top auto
+			bottom -5px
+			left 50%
+			margin-left -6px
+			
+	&--active
+		display inline-block

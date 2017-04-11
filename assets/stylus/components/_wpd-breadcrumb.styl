@@ -1,0 +1,74 @@
+.wpd-breadcrumb
+	li
+		position relative
+		font-size 11px
+		color $color29
+		line-height 29px
+		float left
+		
+		a
+			display block
+			padding 0 21px 0 14px
+			color $color29
+			background $color6
+			font-size 11px
+			text-decoration none
+			cursor pointer
+			after()
+			before()
+			
+			/*&:after 
+				width 20px
+				height 20px
+				background transparent
+				display block
+				right 4px
+				top 4px
+				left auto
+				transform rotateZ(-45deg)
+				border-right 1px solid $color8
+				border-bottom 1px solid $color8
+				opacity 1*/
+					
+			&:after
+				width 1px
+				height 18px
+				background $color8
+				transform rotateZ(-35deg)
+				top -2px
+				right 5px
+				left auto
+				z-index 2
+					
+			&:before
+				width 1px
+				height 18px
+				background $color8
+				transform rotateZ(35deg)
+				top auto
+				bottom -2px
+				right 5px
+				left auto
+				z-index 2
+				
+		&.active,
+		&:last-child
+			opacity 1
+		
+		&.active a,
+		&:last-child a {
+			color $color30
+		}
+			
+		&:first-child
+			a
+				padding-left 15px
+			
+		i
+			color #000
+			margin-right 5px
+			font-size 9px
+			top 0
+
+	&__empty
+		padding-left 10px

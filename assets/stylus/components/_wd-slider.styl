@@ -1,0 +1,96 @@
+.wpd-workspace
+
+	.wd-slider
+		background-color #dddddd
+		position relative
+
+	.wd-slider-nav
+		display none
+		position absolute
+		width 100%
+		height 40px
+		left 0
+		bottom 0
+		z-index 1
+		text-align center
+
+	.wd-slider-dot
+		cursor pointer
+		display inline-block
+		width 15px
+		height 15px
+		background-color rgba(255, 255, 255, 0.4)
+		text-align center
+		border-radius 100%
+		margin 9px 3px
+
+	.wd-slider-pagination .wd-slider-nav
+		display block
+
+	.wd-slider-dot.wd-slider-dot--active
+		background-color rgba(255, 255, 255, 1)
+
+	.wd-slider-left-arrow,
+	.wd-slider-right-arrow
+		cursor pointer
+		display none
+		position absolute
+		top 0
+		width 80px
+		height 100%
+		text-align center
+
+	.wd-slider-navigation .wd-slider-left-arrow,
+	.wd-slider-navigation .wd-slider-right-arrow
+		display block
+		z-index 5
+
+	.wd-slider-left-arrow
+		left 0
+
+	.wd-slider-right-arrow
+		right 0
+
+	.wd-slider-left-arrow .wd-icon,
+	.wd-slider-right-arrow .wd-icon
+		position absolute
+		top 0
+		right 0
+		bottom 0
+		left 0
+		margin auto
+		width 40px
+		height 40px
+
+	.wd-design-mode & .wd-slider-item
+		display none
+		float left
+		width 100%
+
+	.wd-design-mode & .wd-slider-item--active
+		display block
+
+	.owl-carousel
+		position relative
+		width 100%
+
+	.owl-carousel .owl-wrapper-outer
+		overflow hidden
+		position relative
+		width 100%
+
+	.owl-carousel .owl-wrapper
+		display none
+		position relative
+		-webkit-transform translate3d(0px, 0px, 0px)
+
+	.owl-carousel .owl-item
+		float left
+
+.wd-design-mode .wd-slider-mask
+	white-space nowrap
+	overflow hidden
+	height 300px
+
+.wd-design-mode .wd-slider-item:empty
+	min-height 300px

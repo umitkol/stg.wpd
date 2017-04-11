@@ -1,0 +1,45 @@
+.wpd-tooltip
+	display inline-block
+	background $color18
+	color $color12
+	font-size 11px
+	padding 6px
+	border-radius 2px
+	after(type = absolute)
+	
+	&:after
+		width 0
+		height 0
+		border-style solid
+		border-width 0 6px 6px 6px
+		border-color transparent transparent $color18 transparent
+		top -6px
+		left 50%
+		margin-left -6px
+	
+	&.pos-left
+		&:after
+			border-width 6px 0 6px 6px
+			border-color transparent transparent transparent $color18
+			top 50%
+			margin-top -6px
+			left auto
+			right -6px
+	
+	&.pos-right
+		&:after
+			border-width 6px 6px 6px 0
+			border-color transparent $color18 transparent transparent
+			top 50%
+			margin-top -6px
+			left 0
+			right auto
+	
+	&.pos-top
+		&:after
+			border-width: 6px 6px 0 6px;
+			border-color: $color18 transparent transparent transparent;
+			top auto
+			bottom -6px
+			left 50%
+			margin-left -6px

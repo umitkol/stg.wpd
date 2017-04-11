@@ -1,0 +1,20 @@
+// poster flag
+.poster-flag
+  background url(../images/flag/flag-bg.png) left top no-repeat
+  width 141px
+  height 133px
+  position absolute
+  top -18px
+  right -19px
+  left auto
+  
+  &--on-satis
+  	after($type = absolute)
+  	
+  	&:after
+  		background url(../images/flag/on-satis.png) left top no-repeat
+  		top 0
+  		right 0
+  		left auto
+  		width 54px
+  		height 54px

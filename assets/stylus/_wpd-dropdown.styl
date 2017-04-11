@@ -1,0 +1,73 @@
+.wpd-dropdown
+	position relative
+	width 100%
+	font-size 11px
+	
+	&__output
+		background $color15
+		width 100%
+		border 1px solid $color5
+		border-radius 2px
+		height 24px
+		padding 0 22px 0 5px
+		color $color13
+		position relative
+		cursor pointer
+		line-height 22px
+		box-sizing border-box
+		overflow ellipsis
+		after()
+		
+		&:after
+			font-family FontAwesome;
+			content "\f0dd"
+			font-size 11px
+			color $color12
+			left auto
+			top 0
+			right 8px
+		
+	&__list
+		display none
+		background $color10
+		color $color12
+		border 1px solid $color5
+		position absolute
+		top 100%
+		margin-top -1px
+		width 100%
+		box-sizing border-box
+		max-height 128px
+		overflow-y auto
+		z-index $dropdown_zIndex
+		
+		li 
+			padding 5px
+			cursor pointer
+			
+			&.passive
+				//color $color17
+				opacity .3
+			
+			&:hover
+				background $color16
+			
+			&.disabled
+				opacity .3
+				cursor default
+				
+				&:hover
+					background none
+					
+	&--active
+		.wpd-dropdown__list
+			display block
+					
+	&--disabled
+		opacity .3
+		
+		.wpd-dropdown__output
+			cursor default
+		
+		.wpd-dropdown__list
+			display none !important 

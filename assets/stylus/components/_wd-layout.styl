@@ -1,0 +1,19 @@
+.wpd-workspace
+	.wd-container
+		max-width 100% 
+		
+	.wd-clearfix
+		clearfix()
+		
+	.wd-design-mode & .wd-widget
+		position relative
+		
+		&:before
+			position absolute
+			content ''
+			top 0
+			left 0
+			width 100%
+			height 100%
+			background-color rgba(255, 255, 255, 0)
+			z-index 99999

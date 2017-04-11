@@ -1,0 +1,64 @@
+.wpd-button
+	width 48px
+	height 22px
+	line-height 22px
+	background $color10
+	background: linear-gradient(top, $color15, $color10);
+	color $color13
+	font-size 14px
+	text-align center
+	position relative
+	cursor pointer
+	border 1px solid $color5
+	
+	&:focus
+		outline none
+		
+	i
+		font-family FontAwesome
+		position absolute
+		top 50%
+		margin-top -7px
+		left 0
+		width 100%
+	
+	&:hover
+		background $color15
+		
+	&--active
+		background linear-gradient(top, $color19, $color20)
+		border-color $color14
+		color $color12
+					
+		&:hover
+			background linear-gradient(top, $color19, $color20)
+			
+	&--text
+		width auto
+		padding 0 9px
+		font-size 11px
+
+.wpd-button-group
+	.wpd-button
+		float left
+		border-right 0
+		
+		&:first-child
+			border-top-left-radius 2px
+			border-bottom-left-radius 2px
+		
+		&:last-child
+			border-top-right-radius 2px
+			border-bottom-right-radius 2px
+			border-right 1px solid $color5
+			
+		&--active
+			border-right 1px solid $color14
+			
+			&+.wpd-button
+				border-left 0
+				
+			&:last-child
+				border-color $color14
+				
+		

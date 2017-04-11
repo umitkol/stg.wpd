@@ -1,0 +1,220 @@
+.wpd-style-manager
+	height 100%
+	
+	&__item
+		clearfix()
+		
+		&__inner 
+			clearfix()
+			border-bottom 1px solid $color4
+			border-right 1px solid $color4
+			padding 2px 20px 2px 3px
+			background $color1
+			width 100%
+			box-sizing border-box
+			min-height 27px
+			position relative
+		
+		ul
+			li
+				.wpd-style-manager__item__inner
+					padding-left 18px
+					after()
+					
+					&:after
+						font-family 'FontAwesome'
+						content "\f067"
+						color $color13
+						left 6px
+						top 0
+						line-height 27px
+						font-size 10px
+						
+				&.wpd-style-manager__item--active
+					> .wpd-style-manager__item__inner
+						padding-left 3px
+						
+						&:after
+							display none
+							
+				> ul li 
+					.wpd-style-manager__item__inner
+						padding-left 31px
+						
+						&:after
+							left 19px
+							
+					> ul li 
+						.wpd-style-manager__item__inner
+							padding-left 44px
+							
+							&:after
+								left 32px
+							
+						> ul li 
+							.wpd-style-manager__item__inner
+								padding-left 57px
+								
+								&:after
+									left 45px
+							
+							> ul li 
+								.wpd-style-manager__item__inner
+									padding-left 70px
+									
+									&:after
+										left 58px
+							
+								> ul li 
+									.wpd-style-manager__item__inner
+										padding-left 83px
+										
+										&:after
+											left 71px
+							
+									> ul li 
+										.wpd-style-manager__item__inner
+											padding-left 96px
+											
+											&:after
+												left 84px
+							
+										> ul li 
+											.wpd-style-manager__item__inner
+												padding-left 109px
+												
+												&:after
+													left 97px
+							
+											> ul li 
+												.wpd-style-manager__item__inner
+													padding-left 122px
+													
+													&:after
+														left 110px
+							
+												> ul li 
+													.wpd-style-manager__item__inner
+														padding-left 135px
+														
+														&:after
+															left 123px
+							
+													> ul li 
+														.wpd-style-manager__item__inner
+															padding-left 148px
+															
+															&:after
+																left 136px
+																
+														> ul li 
+															.wpd-style-manager__item__inner
+																padding-left 161px
+																
+																&:after
+																	left 149px  
+		
+		&--active
+			> .wpd-style-manager__item__inner .wpd-style-manager__token,
+			> .wpd-style-manager__item__inner .wpd-style-manager__edit
+				display none
+				
+			> .wpd-style-manager__item__inner .wpd-style-manager__editable
+				display block
+				
+			> .wpd-style-manager__item__inner
+				padding-right 3px
+				
+	&__token
+		display inline-block
+		font-size 11px
+		color $color12
+		text-shadow $text_shadow
+		line-height 1.1em
+		border 1px solid $color2 
+		padding 3px 5px
+		background $color18
+		margin-right 3px
+		word-break break-all
+		
+		&--tag 
+			background $color27
+			
+	&__editable
+		display none
+		clear both
+		padding 5px 0 5px 3px
+		width 100%
+		box-sizing border-box
+		
+	&__edit
+		display block
+		float right
+		width 21px
+		height 22px
+		line-height 22px
+		text-decoration none
+		font-size 11px
+		color $color13
+		opacity .6
+		transition opacity 150ms
+		after()
+		
+		&:hover,
+		&:active,
+		&:focus
+			color $color12
+			opacity 1
+		
+		&:after
+			font-family 'FontAwesome'
+			content "\f0ad"
+			position static
+			text-align center 
+			
+	&__action
+		float right
+		
+		a
+			display block
+			float left
+			width 21px
+			height 22px
+			line-height 22px
+			text-decoration none
+			font-size 11px
+			color $color13
+			after()
+			
+			&:hover
+				color $color12
+			
+			&:after
+				font-family 'FontAwesome'
+				position static
+				text-align center
+		
+	&__confirm:after
+		content "\f00c" !important
+		
+	&__cancel:after
+		content "\f00d" !important
+		
+	&__del:after
+		content "\f014" !important
+		
+	.wpd-inset-box
+		margin-left 0
+		width 99%
+		
+		.wpd-style-manager__token
+			display inline-block
+			
+	&__list
+		height calc(100% - 37px) 
+		overflow auto
+			
+.wpd-style-manager__item__inner > .wpd-style-manager__edit
+	position absolute
+	right 0
+	top 2px

@@ -1,0 +1,115 @@
+.wpd-grid-slider
+	position relative
+	background $color3
+	border 1px solid $color4
+	border-radius 2px
+	width 100%
+	height 32px
+	box-sizing border-box
+	
+	&--drag
+		before()
+		
+		&:before
+			background url(../images/strip.png) repeat-x
+			height 38px
+			width 98%
+			top -4px
+			left 2px
+	
+	&__handle
+		position absolute
+		cursor col-resize
+		width 3px
+		height 28px
+		background $color18
+		border-left 3px solid $color3
+		border-right 3px solid $color3
+		right -5px
+		top 1px
+		z-index 3
+		transition all 150ms
+		
+		&:hover,
+		&--drag
+			height 34px 
+			top -2px
+			transition none !important
+	
+	.col
+		float left 
+		position relative
+
+		span
+			display block
+			text-align center
+			height 26px
+			box-sizing border-box
+			margin 2px
+			background $color10
+			font-size 11px
+			color $color13
+			padding-top 7px
+			text-shadow $text_shadow
+			border 1px solid $color5
+			
+		&:last-child
+			.wpd-grid-slider__handle
+				display none
+	
+	.col-1
+		width 8.333333333333332%
+	.col-2
+		width 16.666666666666664%
+	.col-3
+		width 25%
+	.col-4
+		width 33.33333333333333%
+	.col-5
+		width 41.66666666666667%
+	.col-6
+		width 50%
+	.col-7
+		width 58.333333333333336%
+	.col-8
+		width 66.66666666666666%
+	.col-9
+		width 75%
+	.col-10
+		width 83.33333333333334%
+	.col-11
+		width 91.66666666666666%
+	.col-12
+		width 100%
+	
+.rc-slider
+	background transparent
+	border-radius 0
+	width 100%
+	height 32px
+
+.rc-slider-handle
+	position absolute
+	cursor col-resize
+	width 3px
+	height 28px
+	background #437db7
+	border-left 3px solid #393939
+	border-right 3px solid #393939
+	border-radius 0
+	top 1px
+	z-index 3
+	box-sizing content-box !important
+	margin-left -4px
+	margin-top 0
+	border-top 0
+	border-bottom 0
+
+.rc-slider-handle:hover 
+	border-color #393939
+
+.wpd-grid-slider .rc-slider .rc-slider-track,
+.wpd-grid-slider .rc-slider .rc-slider-step,
+.wpd-grid-slider .rc-slider .rc-slider-handle-lower,
+.wpd-grid-slider .rc-slider .rc-slider-handle-upper
+	display none

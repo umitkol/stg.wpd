@@ -1,0 +1,71 @@
+.wpd-toggle
+	&__pane
+		display none
+		border-bottom 1px solid $color4
+	
+	&__header
+		height 28px
+		background $color20
+		border-bottom 1px solid $color4
+		position relative
+		
+		a
+			display block
+			padding 0 20px
+			line-height 28px
+			color $color13
+			text-decoration none
+			font-size 13px
+			after()
+			
+			&:after
+				font-family FontAwesome;
+				content "\f0da"
+				left 8px
+				top 0
+				line-height 27px
+				
+			span
+				display inline-block
+				after()
+				
+				&:after
+					width 4px
+					height 4px
+					background $color16
+					border 1px solid $color4
+					border-radius 3px
+					left auto
+					right -9px
+					top 12px
+					opacity 0
+					transition opacity 400ms
+					
+		.wpd-switch
+			display none
+			position absolute
+			top 0
+			right 10px
+			z-index 2
+					
+		&--pending
+			a
+				span:after
+					opacity 1
+				
+		&--active
+			.wpd-switch
+				display block
+				
+			a:after
+				content "\f0dd"
+				left 7px
+				line-height 22px
+				
+			&+.wpd-toggle__pane
+				display block
+				
+		&:first-child
+			border-top 1px solid $color4
+				
+	

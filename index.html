@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="wd-app wd-design-mode no-js" lang="en" dir="ltr">
+    <head>
+        <title>WPD</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
+    </head>
+    <body>
+
+        <script type="text/javascript">
+        //  manifest="wpd.manifest"
+            var WPD = WPD || {};
+            
+            WPD.Settings = {
+              ajaxUrl: 'http://localhost/WPD/preprod/wp-json/wpd/v1/',
+              pluginUrl: 'http://localhost/WPD/preprod/wp-content/plugins/wpd',
+              Actions: {
+                classes: 'http://localhost/WPD/preprod/wp-json/wpd/v1/wpd_classes/',
+                components: 'http://localhost/WPD/preprod/wp-json/wpd/v1/wpd_components/11',
+                post: 'http://localhost/WPD/preprod/wp-json/wpd/v1/wpd_posts/11'
+              }
+            };
+
+           var WPD = {"Post":{"ID":1,"title":"Hello world!","url":"http:\/\/localhost\/WPD\/preprod\/2016\/10\/28\/hello-world\/"},"Settings":{"nonce":"efe1e86932","pluginUrl":"http:\/\/localhost\/WPD\/preprod\/wp-content\/plugins\/wpd","Actions":{"classes":"http:\/\/localhost\/WPD\/preprod\/wp-json\/wpd\/v1\/wpd_classes\/","components":"http:\/\/localhost\/WPD\/preprod\/wp-json\/wpd\/v1\/wpd_components\/1","post":"http:\/\/localhost\/WPD\/preprod\/wp-json\/wpd\/v1\/wpd_posts\/1"},"allowed_post_types":["post","page"],"gmaps_api_key":"AIzaSyBuU_0_uLMnFM-2oWod_fzC0atPZj7dHlU","post_interval_time":"12000"},"Models":{"Posts":{"text":[{"name":"ID","value":"ID","type":"int"},{"name":"Title","value":"post_title","type":"string"},{"name":"Content","value":"post_content","type":"string","orderable":false},{"name":"Author","value":"post_author","type":"author","format":true,"orderable":false},{"name":"Publish Date","value":"post_date","type":"date","format":true},{"name":"Post Type","value":"post_type","type":"string"},{"name":"Featured Image","value":"post_featured_image","type":"image","orderable":false}],"url":[{"name":"Current Link","value":"current_link","type":"link"},{"name":"Category Link","value":"category_link","type":"link"},{"name":"Home Link","value":"home_link","type":"link"}],"image":[{"name":"Post Featured Image","value":"post_featured_image"}],"post_types":[{"name":"post","value":"post"},{"name":"page","value":"page"},{"name":"elementor_library","value":"elementor_library"}],"post_statuses":[{"name":"Draft","value":"draft"},{"name":"Pending Review","value":"pending"},{"name":"Private","value":"private"},{"name":"Published","value":"publish"}]}},"Formats":{"date":[{"id":null,"name":"March 24, 2017 4:15 pm","value":"F j, Y g:i a"},{"id":null,"name":"March 24, 2017","value":"F j, Y"},{"id":null,"name":"March, 2017","value":"F, Y"},{"id":null,"name":"4:15 pm","value":"g:i a"},{"id":null,"name":"4:15:26 pm","value":"g:i:s a"},{"id":null,"name":"Friday, March 24th, 2017","value":"l, F jS, Y"},{"id":null,"name":"Mar 24, 2017 @ 16:15","value":"M j, Y @ G:i"},{"id":null,"name":"2017\/03\/24 a\t 4:15 PM","value":"Y\/m\/d \\a\t g:i A"},{"id":null,"name":"2017\/03\/24 a\t 4:15pm","value":"Y\/m\/d \\a\t g:ia"},{"id":null,"name":"2017\/03\/24 4:15:26 PM","value":"Y\/m\/d g:i:s A"},{"id":null,"name":"2017\/03\/24","value":"Y\/m\/d"}]}};
+
+            WPD.Post = {
+                ID: 1,
+                url: 'theme/bent/index.html',
+                post_author: "",
+                post_date: "", 
+                post_date_gmt: "",
+                post_content: "", 
+                post_title: "About US", 
+                post_excerpt: "", 
+                post_status: "",
+                comment_status: "",
+                ping_status: "", 
+                post_password: "", 
+                post_name: "",
+                to_ping: "", 
+                pinged: "", 
+                post_modified: "", 
+                post_modified_gmt: "",
+                post_content_filtered: "", 
+                post_parent: "", 
+                guid: "", 
+                menu_order: "",
+                post_type: "",
+                post_mime_type: "", 
+                comment_count: "",
+                filter: ""
+            };
+        </script>
+        <div id="wpd-app"></div>
+
+        <script type="text/javascript" src="assets/scripts/vendors/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="assets/scripts/vendors/jquery-ui.js"></script>
+        <script type="text/javascript" src="assets/scripts/vendors/jquery.slimscroll.min.js"></script>
+        <script type="text/javascript" src="assets/scripts/site/wpd.designer.min.js"></script>
+    </body>
+</html>

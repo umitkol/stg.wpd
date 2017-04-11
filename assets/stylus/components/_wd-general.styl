@@ -1,0 +1,67 @@
+// Common UI styles
+html
+  height 100%
+  
+body
+  font-family $site_font
+  min-height:100%
+  line-height 1
+  margin 0 !important 
+a
+  &:hover  
+  &:focus
+    text-decoration none
+    outline none
+
+ul
+  padding 0
+  margin 0
+  list-style-type none
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6
+  margin 0
+  line-height 1
+
+dl
+dd
+dt
+  margin 0
+
+input[type="search"]
+  box-sizing border-box
+
+input::-ms-clear
+  display none
+
+
+p 
+  line-height 1.6em
+  margin 0
+  
+html.wd-drag-mode *
+  cursor -webkit-grabbing !important
+  cursor grabbing !important
+  
+html.wd-design-mode [data-w-id]
+  cursor default !important
+ 
+html.wd-xray-mode [data-w-id='workspace']
+  filter grayscale(1)
+ 
+html.wd-xray-mode [data-w-id='workspace'] *
+  outline 1px solid rgba(0, 0, 0, 0.1) !important
+  outline-offset -1px !important
+
+.wd-hide-empty .wd-empty
+  height auto
+  min-width 0
+  outline none !important
+  box-shadow none
+
+.wd-condition-invisible
+  display none

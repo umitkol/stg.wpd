@@ -1,0 +1,103 @@
+.wpd-title-block
+	position relative
+	height 28px
+	line-height 28px
+	background: linear-gradient(top, $color15, $color10);
+	border-top 1px solid $color15
+	border-bottom 1px solid $color5
+	padding 0 10px
+	font-size 11px
+	color $color13
+	
+	i
+		margin-right 7px
+	
+	&__close
+		position absolute
+		left auto
+		top 0
+		right 0
+		after(type=absolute)
+		color $color13
+		width 25px
+		height 28px
+		text-align center
+		text-decoration none
+		
+		&:after
+			font-family 'FontAwesome'
+			content "\f00d"
+			position relative
+
+	&--open
+		cursor pointer
+		
+	&--has-open-child
+		opacity .7
+		transition opacity 150ms
+		
+		&:hover
+			opacity 1	
+		
+		.wpd-title-block__close
+			&:after
+				content "\f062"
+				
+.wpd-title-block-b
+	background $color1
+	height 36px
+	color $color13
+	text-shadow $text_shadow
+	font-size 11px
+	padding 0 10px
+	border-bottom 1px solid $color4
+	clearfix()
+	
+	&--bb0
+		border-bottom none
+		
+	&__label
+		line-height 36px
+		float left
+		
+	&__list
+		float right
+		margin-top 13px
+		
+		li
+			float left
+			margin-left 10px
+			
+			a
+				display block
+				opacity .8
+				transition color 150ms
+				font-size 11px
+				color $color13
+				text-decoration none
+				
+				&:hover
+					opacity 1
+		
+	&__button
+		float right
+		margin-top 6px
+		
+	&__filter
+		float left
+		line-height 23px
+		font-size 20px
+		color $color13
+		margin-top 8px
+		margin-left -4px
+		
+		.wpd-dropdown
+			float left
+			width auto
+			
+			&__output
+				padding-right 5px
+				
+				&:after
+					display none
+			

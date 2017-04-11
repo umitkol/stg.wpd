@@ -1,0 +1,88 @@
+.accordion
+  background-color $white
+  box-shadow 1px 1px 0px 0px rgba(5, 5, 6, 0.14)
+
+  .icon
+    display none
+    position absolute
+    left 70px
+    top 23px
+
+  &__button
+    display block
+    padding 20px 45px 20px 20px
+    font-size 16px
+    line-height 1
+    font-weight 300
+    color $dark_gray
+    after()
+
+    &:after
+      top 50%
+      right 20px
+      margin-top -6px
+      retinaSprite($arrow_accordion_down_group)
+
+    &.is-active:after
+      spritePosition($arrow_accordion_up)
+
+  &__body
+    padding 10px
+
+  @media (min-width 768px)
+
+    .icon
+      display block
+
+    &__button
+      padding 30px 130px
+      font-size 24px
+
+      &:after
+        right 80px
+
+    &__body
+      padding 0 130px 20px
+
+
+.accordion-2
+  //background-color $white
+  &__button
+    display block
+    padding 20px 10px 20px 10px
+    font-size 16px
+    line-height 1
+    font-weight 300
+    color $dark_gray
+    border-bottom 1px solid #e5e5e5
+    after()
+    @media (min-width 768px)
+      padding 26px 45px 26px 30px
+
+    &:after
+      top 50%
+      right 10px
+      margin-top -6px
+      retinaSprite($plus_acc_group)
+      @media (min-width 768px)
+        right 50px
+
+    &.is-active
+      background-color #e5a714
+      color $white
+      &:after
+        margin-top -1px
+        width 13px
+        height 3px
+        background-color $white
+        background-image none
+
+  &:last-child
+    .accordion-2__button
+      border-bottom none
+
+  &__body
+    border-bottom 14px solid #e5e5e5
+    padding 10px
+    @media (min-width 768px)
+      padding 40px

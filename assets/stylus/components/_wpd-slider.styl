@@ -1,0 +1,48 @@
+.wpd-slider
+	position relative
+	height 23px
+	width auto
+	padding-top 7px
+	box-sizing border-box
+	margin 0 12px 0 6px
+	cursor pointer
+	after()
+	
+	&:after
+		height 2px
+		width 100%
+		background $color15
+		//border 1px solid $color21
+		margin-top 4px
+		position relative
+		top auto 
+		left auto
+		
+	&__dragger
+		width 10px
+		height 10px
+		background $color9
+		//border 1px solid $color21
+		border-radius 10px
+		position absolute
+		z-index 2 
+		top 7px
+		left 0
+		box-shadow 0 0 1px 0 $box_shadow_color2
+		margin-left -6px
+		cursor pointer
+		transform translateX(0)
+		will-change transform
+		
+		&:hover
+			background $color11
+			
+	&--disabled
+		opacity $disabled_opacity
+		cursor not-allowed
+		
+		.wpd-slider__dragger
+			cursor not-allowed !important
+		
+.wpd-label-side--icon + .wpd-slider
+	width 108px

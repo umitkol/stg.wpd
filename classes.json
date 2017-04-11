@@ -1,0 +1,272 @@
+{
+    "wd-checkbox-input": {
+        "id": "wd-checkbox-input",
+        "name": "WD Checkbox Input",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-tab-pane": {
+        "id": "wd-tab-pane",
+        "name": "WD Tab Pane",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-col": {
+        "id": "wd-col",
+        "name": "WD Col",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-container": {
+        "id": "wd-container",
+        "name": "WD Container",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-slider": {
+        "id": "wd-slider",
+        "name": "WD Slider",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-heading": {
+        "id": "wd-heading",
+        "name": "WD Heading",
+        "media": "",
+        "children": [],
+        "_type": "global",
+        "style": {
+            "fontSize": "36px",
+            "lineHeight": "50px"
+        }
+    },
+    "wd-list-item": {
+        "id": "wd-list-item",
+        "name": "WD List Item",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-checkbox": {
+        "id": "wd-checkbox",
+        "name": "WD Checkbox",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-form-block": {
+        "id": "wd-form-block",
+        "name": "WD Form Block",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-widget": {
+        "id": "wd-widget",
+        "name": "WD Widget",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-section": {
+        "id": "wd-section",
+        "name": "WD Section",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-clearfix": {
+        "id": "wd-clearfix",
+        "name": "WD Clearfix",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-richtext": {
+        "id": "wd-richtext",
+        "name": "WD RichText",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-tabs-content": {
+        "id": "wd-tabs-content",
+        "name": "WD Tab Content",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-input": {
+        "id": "wd-input",
+        "name": "WD Input",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-widget-twitter": {
+        "id": "wd-widget-twitter",
+        "name": "WD Twitter",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-tabs-menu": {
+        "id": "wd-tabs-menu",
+        "name": "WD Tabs Menu",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-blockquote": {
+        "id": "wd-blockquote",
+        "name": "WD Blockquote",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-widget-facebook": {
+        "id": "wd-widget-facebook",
+        "name": "WD Facebook",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-p": {
+        "id": "wd-p",
+        "name": "WD P",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-div": {
+        "id": "wd-div",
+        "name": "WD Div",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-button": {
+        "id": "wd-button",
+        "name": "WD Button",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-tab-link": {
+        "id": "wd-tab-link",
+        "name": "WD Tab Link",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-widget-map": {
+        "id": "wd-widget-map",
+        "name": "WD Map",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-label": {
+        "id": "wd-label",
+        "name": "WD Label",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-slider-nav": {
+        "id": "wd-slider-nav",
+        "name": "WD Slider Nav",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-radio-input": {
+        "id": "wd-radio-input",
+        "name": "WD Radio Input",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-slider-mask": {
+        "id": "wd-slider-mask",
+        "name": "WD Slider Mask",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-inline-block": {
+        "id": "wd-inline-block",
+        "name": "WD Inline Block",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-row": {
+        "id": "wd-row",
+        "name": "WD Row",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-radio": {
+        "id": "wd-radio",
+        "name": "WD Radio",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-select": {
+        "id": "wd-select",
+        "name": "WD Select",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-tabs": {
+        "id": "wd-tabs",
+        "name": "WD Tabs",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-list": {
+        "id": "wd-list",
+        "name": "WD List",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-slider-item": {
+        "id": "wd-slider-item",
+        "name": "WD Slider Item",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-slider-left-arrow": {
+        "id": "wd-slider-left-arrow",
+        "name": "WD Slider Left Arrow",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-slider-right-arrow": {
+        "id": "wd-slider-right-arrow",
+        "name": "WD Slider Right Arrow",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    },
+    "wd-icon": {
+        "id": "wd-icon",
+        "name": "WD Icon",
+        "media": "",
+        "children": [],
+        "_type": "global"
+    }
+}

@@ -1,0 +1,181 @@
+.wpd-assets
+	&__list
+		clearfix()
+		
+		li
+			background $color19
+			position relative
+
+		&__table
+			display table
+			width 100%
+			height 100%
+			
+		&__img
+			display table-cell
+			text-align center
+			vertical-align middle
+
+			i
+				font-size 16px
+			
+		&__conf
+			display none
+			right 0
+			top 0
+			z-index 2
+			width 20px
+			height 20px
+			after(type=absolute)
+			text-align center
+			color $color13
+			font-size 11px
+			cursor pointer 
+			
+			&:after
+				font-family 'FontAwesome'
+				content "\f013"
+				position relative
+				display inline-block
+				line-height 20px
+				
+		&__img-info
+			display none
+			
+		&__img-name
+			overflow ellipsis
+			font-size 11px
+			color $color13
+			padding-bottom 5px
+			width 150px
+			
+		&__img-size
+			overflow ellipsis
+			font-size 11px
+			color $color13_8
+			width 150px
+				
+		&--grid-large
+			li
+				height 72px
+				float left
+				width 33.33%
+				border-right 1px solid $color4
+				border-bottom 1px solid $color4
+				box-sizing border-box
+				
+				&:nth-child(1),
+				&:nth-child(2),
+				&:nth-child(3)
+					border-top 1px solid $color4
+				
+				img
+					display inline-block
+					vertical-align middle
+					max-height 62px
+					max-width 100%
+
+		&--grid-small
+			li
+				height 28px
+				float left
+				width 28px
+				border-right 1px solid $color4
+				border-bottom 1px solid $color4
+				box-sizing border-box
+				
+				&:nth-child(1),
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4),
+				&:nth-child(5),
+				&:nth-child(6)
+					border-top 1px solid $color4
+				
+				img
+					display inline-block
+					vertical-align middle
+					max-height 22px
+					max-width 100%
+
+		&--list-large
+			li
+				height 43px
+				float none
+				width 100%
+				border-right 1px solid $color4
+				border-bottom 1px solid $color4
+				box-sizing border-box
+				
+				&:nth-child(1)
+					border-top 1px solid $color4
+				
+				img
+					display inline-block
+					vertical-align middle
+					max-height 36px
+					max-width 100%
+					
+			.wpd-assets__list__img
+				width 46px
+				height 41px
+				border-right 1px solid $color4
+				
+				img
+					max-width 40px
+					max-height 36px
+				
+			.wpd-assets__list__img-info	
+				display table-cell
+				padding 8px
+
+		&--list-small
+			li
+				height 22px
+				float none
+				width 100%
+				border-right 1px solid $color4
+				border-bottom 1px solid $color4
+				box-sizing border-box
+				
+				&:nth-child(1)
+					border-top 1px solid $color4
+				
+				img
+					display inline-block
+					vertical-align middle
+					max-height 36px
+					max-width 100%
+					
+			.wpd-assets__list__img
+				width 26px
+				height 20px
+				border-right 1px solid $color4
+				
+				img
+					max-width 22px
+					max-height 16px
+				
+			.wpd-assets__list__img-info	
+				display table-cell
+				padding 0 8px
+				
+			.wpd-assets__list__img-name
+				padding-top 5px
+				
+			.wpd-assets__list__img-size
+				display none
+			
+		li:hover
+			box-shadow inset 0 0 0 1px $color13_8
+			z-index 3
+			
+			.wpd-assets__list__conf
+				display block
+
+				
+
+			
+
+			
+			

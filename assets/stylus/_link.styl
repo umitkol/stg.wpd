@@ -1,0 +1,54 @@
+.link
+  &--dark
+    color $dark_gray
+
+  &--dark-underline
+    color $dark_gray
+    &:hover
+      text-decoration underline
+
+  &--white
+    color $white
+    &:hover, &:focus
+      color $white
+
+  &--orange
+    color $dark_orange
+    &:hover, &:focus
+      color $light_orange
+
+  &--pink
+    color $pink
+    cursor pointer
+    &:hover, &:focus
+      color $pink
+
+  &--grey
+    color #bbbbbb
+    &:hover, &:focus
+      color $white
+
+  &--hover-act
+    transition opacity .15s ease-in-out
+    &:hover
+      opacity 0.8
+
+  &--ui-menu
+    font-size 11px
+    color #ededed
+    text-decoration underline
+
+  &--underline
+    text-decoration underline
+    &:hover
+      text-decoration none
+
+  &--forgot
+    display inline-block
+    color $dark_gray
+    font-size 11px
+    line-height 1.2
+    vertical-align middle
+
+  &--has-icon
+    position relative

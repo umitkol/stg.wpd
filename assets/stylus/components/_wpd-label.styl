@@ -1,0 +1,148 @@
+//label-side
+.wpd-label-side
+  float left
+  font-size 11px
+  color $color13
+  margin-right 6px
+  line-height 1.2em
+  text-shadow $text_shadow
+  margin-top 5px
+  //width 41px
+  overflow ellipsis
+  
+  &--local
+    span
+      color $color16
+      border-bottom 1px dotted $color16
+      cursor pointer
+    
+    &:hover
+      span
+        color $color16
+        border-bottom-style solid
+      
+  &--global
+    span
+      color $color23
+      border-bottom 1px dotted $color23
+      cursor pointer
+    
+      &:hover
+        color $color23
+        border-bottom-style solid
+      
+  i
+    display inline-block
+    font-size 12px
+    line-height 23px
+    margin -4px 3px 0
+    
+  &--icon
+    width 16px
+    
+  &--disabled
+    opacity $disabled_opacity
+    cursor not-allowed
+    
+    &.wpd-label-side--local:hover
+      border-bottom-style dotted
+    
+//label-block
+.wpd-label-block
+  display block
+  font-size 11px
+  color $color13
+  line-height 1.2em
+  text-shadow $text_shadow
+  margin-bottom 6px
+  
+  &--local
+    span
+      color $color16
+      border-bottom 1px dotted $color16
+      cursor pointer
+      
+      &:hover
+        color $color16
+        border-bottom-style solid
+    
+  &--global
+    span
+      color $color23
+      border-bottom 1px dotted $color23
+      cursor pointer
+      
+      &:hover
+        color $color23
+        border-bottom-style solid
+        
+  &--iconed-title
+    margin-bottom 8px
+    
+    i
+      font-size 18px
+      position relative
+      margin-right 3px
+      top 2px
+        
+    &--b
+      line-height 14px
+      padding-bottom 8px
+      border-bottom 1px solid $color5
+      
+      span
+        top 1px
+        position relative
+      
+      i
+        background $color19
+        border 1px solid $color4
+        width 16px
+        height 14px
+        font-size 9px
+        position relative
+        margin-right 3px
+        box-sizing border-box
+        line-height 14px
+        text-align center
+        box-shadow $box_shadow_light
+        display inline-block
+        position relative
+        top 1px
+      
+//label-inline-block
+.wpd-label
+  display inline-block
+  font-size 11px
+  color $color13
+  line-height 23px
+  text-shadow $text_shadow 
+  margin-bottom 6px
+   
+  &--local
+    span
+      color $color16
+      border-bottom 1px dotted $color16
+      cursor pointer
+      
+      &:hover
+        color $color16
+        border-bottom-style solid
+  
+  &--global
+    span
+      color $color23
+      border-bottom 1px dotted $color23
+      cursor pointer
+      
+      &:hover
+        color $color23
+        border-bottom-style solid
+        
+  &--long
+    position relative
+    right 6px
+    
+  &--strong
+    font-size 15px
+    font-weight 700

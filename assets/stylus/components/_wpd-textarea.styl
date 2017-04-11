@@ -1,0 +1,28 @@
+textarea.wpd-textarea
+	display block
+	height 122px
+	width 100%
+	line-height 1.6em
+	background linear-gradient(top, $color19, $color20)
+	border 1px solid $color4
+	border-radius 2px
+	box-sizing border-box
+	color $color13
+	font-size 11px
+	padding 5px
+	placeholder $color9 
+	resize none
+	
+	&:hover
+		box-shadow 0 0 2px 1px $color8
+	
+	&:focus
+		outline none
+		box-shadow: 0 0 1px 1px $color16_6;
+	
+	&:disabled
+		opacity $disabled_opacity
+		cursor not-allowed
+	
+		&:hover
+			box-shadow none

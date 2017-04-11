@@ -1,0 +1,300 @@
+.wpd-layer
+	clearfix()
+	width 100%
+	background $color24
+	padding 0
+	height 30px
+	margin 0 auto 
+	box-sizing border-box
+	border 1px solid $color19
+	box-shadow $box_shadow_light
+	border-radius 2px
+	border-top-right-radius 0
+	margin-bottom 2px
+	color $color13_8
+	font-size 11px
+	line-height 28px
+	position relative
+	text-align center
+	z-index 2
+	
+	&:hover
+		box-shadow 0 0 2px 1px $color8
+		
+	&--empty:hover
+		box-shadow none
+		box-shadow $box_shadow_light
+		
+	&:last-child
+		margin-bottom 0
+	
+	&__eye
+		display block
+		float left
+		font-size 14px
+		color $color13 
+		width 14px
+		height 28px
+		padding-right 3px
+		transition color 100ms
+		padding-left 7px
+		after()
+		
+		&:after
+			font-family 'FontAwesome'
+			content "\f06e"
+			left 7px
+			
+		&:hover
+			color $color12
+	
+	&__cube
+		display block
+		float left
+		font-size 14px
+		color $color13 
+		width 14px
+		height 28px
+		padding-right 3px
+		transition color 100ms
+		padding-left 7px
+		after()
+		
+		&:after
+			font-family 'FontAwesome'
+			content "\f1b2"
+			left 7px
+			
+		&:hover
+			color $color12
+			cursor -webkit-grab
+			cursor grab 
+			
+	&__drag
+		float left
+		font-size 14px
+		color $color13
+		width 1px
+		height 28px
+		padding 0 5px
+		margin-right 2px
+		cursor ns-resize
+		after()
+		
+		&:after
+			width 1px
+			left 3px
+			top 3px
+			height 22px
+			background transparent
+			border-right 2px dotted $color13
+			opacity .5
+			
+		&:hover:after
+			opacity 1
+		
+	&__text
+		float left
+		width 135px
+		overflow ellipsis
+		opacity .8
+		text-align left
+		
+		&--alive
+			opacity 1
+		
+	&__img-preview
+		float right
+		width 22px
+		height 18px
+		border 1px solid $color19
+		border-radius 2px
+		margin-right 3px
+		margin-top 4px
+		
+		img
+			display block
+			width 20px
+			height 16px
+			border 1px solid $color24
+			border-radius 2px
+			
+	&__edit
+		float right
+		font-size 12px
+		color $color13
+		width 11px
+		height 28px
+		transition color 100ms
+		padding-right 5px
+		padding-left 6px
+		after()
+		
+		&:after
+			font-family 'FontAwesome'
+			content "\f040"
+			left 8px
+			
+		&:hover
+			color $color12
+			
+	&__clone
+		float right
+		font-size 12px
+		color $color13
+		width 11px
+		height 28px
+		transition color 100ms
+		padding-right 5px
+		padding-left 6px
+		after()
+		
+		&:after
+			font-family 'FontAwesome'
+			content "\f24d"
+			left 6px
+			
+		&:hover
+			color $color12
+			
+	&__conf
+		float right
+		font-size 12px
+		color $color13
+		width 11px
+		height 28px
+		transition color 100ms
+		padding-right 5px
+		padding-left 6px
+		after()
+		
+		&:after
+			font-family 'FontAwesome'
+			content "\f0ad"
+			left 8px
+			
+		&:hover
+			color $color12
+			
+	&__shadow-preview
+		float right
+		width 11px
+		height 11px
+		border-radius 100%
+		margin-right 3px
+		margin-top 9px
+		background transparent
+		
+	&__trash
+		float right
+		font-size 14px
+		color $color13
+		width 11px
+		height 28px
+		transition color 100ms
+		padding-right 7px
+		padding-left 5px
+		after()
+		
+		&:after
+			font-family 'FontAwesome'
+			content "\f014"
+			left 5px
+			
+		&:hover
+			color $color12
+			
+	&__radio
+		float left
+		margin-top 7px
+		width 125px
+		overflow ellipsis
+		text-align left
+		
+		&--empty
+			margin-left 13px
+			display block
+			width auto
+			float none
+			
+	.wpd-signal
+		float left
+		margin 10px 6px
+			
+	&--passive
+		opacity $passive_opacity
+		.wpd-layer__eye
+			&:after
+				content "\f070"
+				
+			&:hover
+				color $color13
+			
+		.wpd-layer__drag:hover
+			opacity .5
+			
+		.wpd-layer__trash:hover
+			color $color13
+			
+	&--dragging
+		outline none
+		box-shadow: 0 0 1px 1px $color16_6;
+		
+		&:hover
+			box-shadow: 0 0 1px 1px $color16_6;
+
+	&--symbol
+		height 38px
+		line-height 36px
+		
+		.wpd-layer__cube,
+		.wpd-layer__eye,
+		.wpd-layer__drag,
+		.wpd-layer__trash,
+		.wpd-layer__edit
+			height 36px
+			
+		.wpd-layer__drag:after
+			height 30px
+			
+		.wpd-layer__text
+			line-height 1.2em
+			padding-top 5px
+			
+			&:hover
+				color $color12
+				cursor -webkit-grab
+				cursor grab 
+		
+		&:hover
+			.wpd-layer__cube,
+			.wpd-layer__text
+				color $color12
+				cursor -webkit-grab
+				cursor grab 
+				
+	&--active
+		outline none
+		box-shadow none
+		box-shadow: 0 0 1px 1px $color16_6;
+		 
+		.wpd-radio--active
+			&:after
+				color $color16
+				
+			&.wpd-layer__radio--empty:after
+				color $color13
+				
+		&.wpd-layer--empty
+			box-shadow none
+		
+		&:hover
+			box-shadow none
+			box-shadow: 0 0 1px 1px $color16_6;
+			
+	&.wpd-layer--empty
+		outline none 
+		box-shadow none
+		
+		&:hover
+			box-shadow none

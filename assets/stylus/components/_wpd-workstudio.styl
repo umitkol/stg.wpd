@@ -1,0 +1,251 @@
+.wpd-workstudio
+	position fixed
+	width calc(100% - 35px - 241px)
+	height calc(100% - 30px - 35px)
+	box-sizing border-box
+	//background $color14
+	top 35px
+	left 35px
+	background $workspace
+	
+	&__content
+		width 100%
+		height 100%
+		position relative
+		margin 0 auto
+		background $workspace
+		transition max-width 50ms ease-in
+		will-change max-width
+		-webkit-box-shadow 0px 0px 30px 10px rgba(0,0,0,0.3)
+		-moz-box-shadow 0px 0px 30px 10px rgba(0,0,0,0.3)
+		box-shadow 0px 0px 30px 10px rgba(0,0,0,0.3)
+		
+	&__iframe
+		width 100%
+		height 100%
+		border 0
+
+#wpd-tools
+	position absolute
+	top 0
+	left 0
+	bottom 0
+	right 0
+	z-index 6
+	pointer-events none
+	overflow hidden
+	will-change top
+
+.wpd-bridge
+	position fixed
+	top 0
+	left 0
+	height 100%
+	width 100%
+	user-select none
+
+[data-w-id='workspace']
+	position relative
+	z-index 2
+
+html
+	.wd-drag-mode
+		
+		*
+			display none !important
+
+		.wpd-hovered-outline, .wpd-selected-outline
+			display none !important
+
+		.wpd-dropped-outline
+			display block
+ 
+		.allow-drag-cursor,
+		.allow-drag-cursor *
+			cursor grabbing !important
+
+	.wd-app
+		overflow hidden
+
+	.wd-design-mode
+		overflow hidden
+	
+.wpd-selected-outline.editing
+	border 0
+	outline 1px solid rgba(23, 141, 247, 0.93)
+	
+#wpd-app
+	position absolute
+	top 0
+	left 0
+	height 100%
+	width 100%
+	
+[data-w-id],
+.wpd-outline
+	will-change height, width, top, left
+		
+.wpd-outline 
+	position absolute 
+	color $color33
+	display none
+	pointer-events none 
+	display none
+	user-select none 
+	box-sizing border-box
+
+	&.expanded .wd-breadcrumbs .crumbs .crumb
+		display table
+
+	&.active
+		display block
+
+	.wd-breadcrumbs
+		position absolute
+		left -1px
+		top 0
+		width auto
+		min-width 200px
+
+		.crumbs
+			clearfix()
+			position absolute
+			bottom 0
+			left 0
+
+			.crumb
+				display none
+				pointer-events auto
+				cursor pointer
+				zoom 1
+				clear left
+				color #fff
+				margin-top 2px
+				border-radius 2px
+				font-size 9px
+				white-space nowrap
+
+				&.current
+					display table
+					border-radius 2px 2px 0 0
+
+				.icon
+					font-size 10px
+					color $color12
+					text-indent 0
+
+					&.actions-icon
+						border-left 1px solid #50a8f7
+						width 16px
+
+					&.component-icon
+						padding-left 4px
+
+				.label
+					font-size 10px
+					padding 0 4px
+
+				.icon, .label
+					display table-cell
+					height 16px
+					vertical-align middle
+					text-align center
+
+.wpd-selected-outline
+	outline 1px solid rgba(23, 141, 247, 0.93)
+	z-index 8
+
+	.wd-breadcrumbs .crumbs .crumb
+		background-color rgba(23, 141, 247, 0.93)
+
+		&.current
+			background-color rgba(23, 141, 247, 0.93) !important
+
+		&:hover
+			background-color #ff9900
+
+		.icon.actions-icon:hover
+			background-color #50a8f7
+
+.wpd-hovered-outline
+	outline 1px solid $color33
+	z-index 7 
+
+	.wd-breadcrumbs .crumbs .crumb
+		background-color transparent
+		color $color33
+
+		.icon
+			color $color33
+
+.wpd-dropped-outline
+	outline 2px solid #ff9900
+	z-index 9
+	box-sizing content-box !important
+	margin-top -2px
+	margin-left -2px
+	padding 2px
+
+	&&--error 
+		outline 2px solid red 
+
+	&&--error .wd-breadcrumbs .crumbs .crumb 
+		background-color red
+
+	.wd-breadcrumbs 
+		min-width auto
+		width 100%
+		text-align center
+		left -2px
+
+		.crumbs .crumb
+			background-color #ff9900
+			color white
+
+			.icon
+				color white
+
+.wpd-dropline
+	position absolute
+	background #388eff
+	z-index 9999
+
+	&:before,
+	&:after
+		position absolute
+		content ''
+		top -4px
+		width 0
+		height 0
+		z-index 15
+
+	&:before
+		left -4px
+		border-top 5px solid transparent
+		border-left 8px solid #388eff
+		border-bottom 5px solid transparent
+
+	&:after
+		right -4px
+		border-top 5px solid transparent
+		border-right 8px solid #388eff
+		border-bottom 5px solid transparent
+
+	&&--vertical:before
+		left -4px
+		top -4px
+		border 0
+		border-left 5px solid transparent
+		border-top 8px solid #388eff
+		border-right 5px solid transparent
+
+
+	&&--vertical:after
+		left -4px
+		right auto
+		bottom -4px
+		top auto
+		border 0
+		border-left 5px solid transparent
+		border-bottom 8px solid #388eff
+		border-right 5px solid transparent

@@ -1,0 +1,61 @@
+.ui-datepicker
+  background $alabaster
+  border 1px solid #e5e5e5
+  Gotham(12px, 400)
+  
+  th
+    color $tundora
+    
+  .ui-datepicker-today
+    .ui-state-default
+      background $white
+      
+  .ui-state-active
+    background $dove !important
+    color $white !important
+    
+  .ui-datepicker-month,
+  .ui-datepicker-year
+    color $tundora
+    width 45% !important
+    margin 0 2px !important
+
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default {
+  border 1px solid #e5e5e5
+  background #e5e5e5
+  font-weight bold
+  color $tundora
+}
+
+.ui-widget-header
+  border 1px solid $dove
+  background $dove
+  border-radius 0
+  
+.ui-datepicker-next.ui-corner-all
+  retinaSprite($arrow_right_white_group)
+
+.ui-datepicker-next.ui-corner-all.ui-state-hover
+  background-color transparent !important
+  border none !important
+  retinaSprite($arrow_right_white_group)
+  cursor pointer
+  
+.ui-datepicker .ui-datepicker-next
+  top 6px
+  right 6px
+  
+.ui-datepicker .ui-datepicker-prev
+  top 6px
+  left 6px
+  
+.ui-datepicker-prev.ui-corner-all
+  retinaSprite($arrow_left_white_group)
+  
+.ui-datepicker-prev.ui-corner-all.ui-state-hover
+  background-color transparent !important
+  border none !important
+  retinaSprite($arrow_left_white_group)
+  cursor pointer

@@ -1,0 +1,485 @@
+/*
+Stylus variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon_home_width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon_home = x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet = width height image $spritesheet_sprites;
+*/
+$badge_step_a_name = 'badge-step-a';
+$badge_step_a_x = 0px;
+$badge_step_a_y = 0px;
+$badge_step_a_offset_x = 0px;
+$badge_step_a_offset_y = 0px;
+$badge_step_a_width = 40px;
+$badge_step_a_height = 40px;
+$badge_step_a_total_width = 142px;
+$badge_step_a_total_height = 132px;
+$badge_step_a_image = '../images/sprite-common.png';
+$badge_step_a = 0px 0px 0px 0px 40px 40px 142px 132px '../images/sprite-common.png' 'badge-step-a';
+$checkbox_checked_name = 'checkbox-checked';
+$checkbox_checked_x = 112px;
+$checkbox_checked_y = 68px;
+$checkbox_checked_offset_x = -112px;
+$checkbox_checked_offset_y = -68px;
+$checkbox_checked_width = 20px;
+$checkbox_checked_height = 20px;
+$checkbox_checked_total_width = 142px;
+$checkbox_checked_total_height = 132px;
+$checkbox_checked_image = '../images/sprite-common.png';
+$checkbox_checked = 112px 68px -112px -68px 20px 20px 142px 132px '../images/sprite-common.png' 'checkbox-checked';
+$checkbox_name = 'checkbox';
+$checkbox_x = 24px;
+$checkbox_y = 112px;
+$checkbox_offset_x = -24px;
+$checkbox_offset_y = -112px;
+$checkbox_width = 20px;
+$checkbox_height = 20px;
+$checkbox_total_width = 142px;
+$checkbox_total_height = 132px;
+$checkbox_image = '../images/sprite-common.png';
+$checkbox = 24px 112px -24px -112px 20px 20px 142px 132px '../images/sprite-common.png' 'checkbox';
+$phone_name = 'phone';
+$phone_x = 0px;
+$phone_y = 112px;
+$phone_offset_x = 0px;
+$phone_offset_y = -112px;
+$phone_width = 20px;
+$phone_height = 20px;
+$phone_total_width = 142px;
+$phone_total_height = 132px;
+$phone_image = '../images/sprite-common.png';
+$phone = 0px 112px 0px -112px 20px 20px 142px 132px '../images/sprite-common.png' 'phone';
+$right_arrow_white_name = 'right-arrow-white';
+$right_arrow_white_x = 112px;
+$right_arrow_white_y = 92px;
+$right_arrow_white_offset_x = -112px;
+$right_arrow_white_offset_y = -92px;
+$right_arrow_white_width = 9px;
+$right_arrow_white_height = 11px;
+$right_arrow_white_total_width = 142px;
+$right_arrow_white_total_height = 132px;
+$right_arrow_white_image = '../images/sprite-common.png';
+$right_arrow_white = 112px 92px -112px -92px 9px 11px 142px 132px '../images/sprite-common.png' 'right-arrow-white';
+$step_a_active_name = 'step-a-active';
+$step_a_active_x = 78px;
+$step_a_active_y = 34px;
+$step_a_active_offset_x = -78px;
+$step_a_active_offset_y = -34px;
+$step_a_active_width = 30px;
+$step_a_active_height = 30px;
+$step_a_active_total_width = 142px;
+$step_a_active_total_height = 132px;
+$step_a_active_image = '../images/sprite-common.png';
+$step_a_active = 78px 34px -78px -34px 30px 30px 142px 132px '../images/sprite-common.png' 'step-a-active';
+$step_a_name = 'step-a';
+$step_a_x = 0px;
+$step_a_y = 78px;
+$step_a_offset_x = 0px;
+$step_a_offset_y = -78px;
+$step_a_width = 30px;
+$step_a_height = 30px;
+$step_a_total_width = 142px;
+$step_a_total_height = 132px;
+$step_a_image = '../images/sprite-common.png';
+$step_a = 0px 78px 0px -78px 30px 30px 142px 132px '../images/sprite-common.png' 'step-a';
+$step_b_active_name = 'step-b-active';
+$step_b_active_x = 112px;
+$step_b_active_y = 34px;
+$step_b_active_offset_x = -112px;
+$step_b_active_offset_y = -34px;
+$step_b_active_width = 30px;
+$step_b_active_height = 30px;
+$step_b_active_total_width = 142px;
+$step_b_active_total_height = 132px;
+$step_b_active_image = '../images/sprite-common.png';
+$step_b_active = 112px 34px -112px -34px 30px 30px 142px 132px '../images/sprite-common.png' 'step-b-active';
+$step_b_name = 'step-b';
+$step_b_x = 68px;
+$step_b_y = 78px;
+$step_b_offset_x = -68px;
+$step_b_offset_y = -78px;
+$step_b_width = 30px;
+$step_b_height = 30px;
+$step_b_total_width = 142px;
+$step_b_total_height = 132px;
+$step_b_image = '../images/sprite-common.png';
+$step_b = 68px 78px -68px -78px 30px 30px 142px 132px '../images/sprite-common.png' 'step-b';
+$step_c_active_name = 'step-c-active';
+$step_c_active_x = 112px;
+$step_c_active_y = 0px;
+$step_c_active_offset_x = -112px;
+$step_c_active_offset_y = 0px;
+$step_c_active_width = 30px;
+$step_c_active_height = 30px;
+$step_c_active_total_width = 142px;
+$step_c_active_total_height = 132px;
+$step_c_active_image = '../images/sprite-common.png';
+$step_c_active = 112px 0px -112px 0px 30px 30px 142px 132px '../images/sprite-common.png' 'step-c-active';
+$step_c_name = 'step-c';
+$step_c_x = 34px;
+$step_c_y = 78px;
+$step_c_offset_x = -34px;
+$step_c_offset_y = -78px;
+$step_c_width = 30px;
+$step_c_height = 30px;
+$step_c_total_width = 142px;
+$step_c_total_height = 132px;
+$step_c_image = '../images/sprite-common.png';
+$step_c = 34px 78px -34px -78px 30px 30px 142px 132px '../images/sprite-common.png' 'step-c';
+$step_d_active_name = 'step-d-active';
+$step_d_active_x = 78px;
+$step_d_active_y = 0px;
+$step_d_active_offset_x = -78px;
+$step_d_active_offset_y = 0px;
+$step_d_active_width = 30px;
+$step_d_active_height = 30px;
+$step_d_active_total_width = 142px;
+$step_d_active_total_height = 132px;
+$step_d_active_image = '../images/sprite-common.png';
+$step_d_active = 78px 0px -78px 0px 30px 30px 142px 132px '../images/sprite-common.png' 'step-d-active';
+$step_d_name = 'step-d';
+$step_d_x = 34px;
+$step_d_y = 44px;
+$step_d_offset_x = -34px;
+$step_d_offset_y = -44px;
+$step_d_width = 30px;
+$step_d_height = 30px;
+$step_d_total_width = 142px;
+$step_d_total_height = 132px;
+$step_d_image = '../images/sprite-common.png';
+$step_d = 34px 44px -34px -44px 30px 30px 142px 132px '../images/sprite-common.png' 'step-d';
+$step_e_active_name = 'step-e-active';
+$step_e_active_x = 0px;
+$step_e_active_y = 44px;
+$step_e_active_offset_x = 0px;
+$step_e_active_offset_y = -44px;
+$step_e_active_width = 30px;
+$step_e_active_height = 30px;
+$step_e_active_total_width = 142px;
+$step_e_active_total_height = 132px;
+$step_e_active_image = '../images/sprite-common.png';
+$step_e_active = 0px 44px 0px -44px 30px 30px 142px 132px '../images/sprite-common.png' 'step-e-active';
+$step_e_name = 'step-e';
+$step_e_x = 44px;
+$step_e_y = 0px;
+$step_e_offset_x = -44px;
+$step_e_offset_y = 0px;
+$step_e_width = 30px;
+$step_e_height = 30px;
+$step_e_total_width = 142px;
+$step_e_total_height = 132px;
+$step_e_image = '../images/sprite-common.png';
+$step_e = 44px 0px -44px 0px 30px 30px 142px 132px '../images/sprite-common.png' 'step-e';
+$badge_step_a_2x_name = 'badge-step-a-2x';
+$badge_step_a_2x_x = 0px;
+$badge_step_a_2x_y = 0px;
+$badge_step_a_2x_offset_x = 0px;
+$badge_step_a_2x_offset_y = 0px;
+$badge_step_a_2x_width = 80px;
+$badge_step_a_2x_height = 80px;
+$badge_step_a_2x_total_width = 284px;
+$badge_step_a_2x_total_height = 264px;
+$badge_step_a_2x_image = '../images/sprite-common-2x.png';
+$badge_step_a_2x = 0px 0px 0px 0px 80px 80px 284px 264px '../images/sprite-common-2x.png' 'badge-step-a-2x';
+$checkbox_2x_name = 'checkbox-2x';
+$checkbox_2x_x = 224px;
+$checkbox_2x_y = 136px;
+$checkbox_2x_offset_x = -224px;
+$checkbox_2x_offset_y = -136px;
+$checkbox_2x_width = 40px;
+$checkbox_2x_height = 40px;
+$checkbox_2x_total_width = 284px;
+$checkbox_2x_total_height = 264px;
+$checkbox_2x_image = '../images/sprite-common-2x.png';
+$checkbox_2x = 224px 136px -224px -136px 40px 40px 284px 264px '../images/sprite-common-2x.png' 'checkbox-2x';
+$checkbox_checked_2x_name = 'checkbox-checked-2x';
+$checkbox_checked_2x_x = 48px;
+$checkbox_checked_2x_y = 224px;
+$checkbox_checked_2x_offset_x = -48px;
+$checkbox_checked_2x_offset_y = -224px;
+$checkbox_checked_2x_width = 40px;
+$checkbox_checked_2x_height = 40px;
+$checkbox_checked_2x_total_width = 284px;
+$checkbox_checked_2x_total_height = 264px;
+$checkbox_checked_2x_image = '../images/sprite-common-2x.png';
+$checkbox_checked_2x = 48px 224px -48px -224px 40px 40px 284px 264px '../images/sprite-common-2x.png' 'checkbox-checked-2x';
+$phone_2x_name = 'phone-2x';
+$phone_2x_x = 0px;
+$phone_2x_y = 224px;
+$phone_2x_offset_x = 0px;
+$phone_2x_offset_y = -224px;
+$phone_2x_width = 40px;
+$phone_2x_height = 40px;
+$phone_2x_total_width = 284px;
+$phone_2x_total_height = 264px;
+$phone_2x_image = '../images/sprite-common-2x.png';
+$phone_2x = 0px 224px 0px -224px 40px 40px 284px 264px '../images/sprite-common-2x.png' 'phone-2x';
+$right_arrow_white_2x_name = 'right-arrow-white-2x';
+$right_arrow_white_2x_x = 224px;
+$right_arrow_white_2x_y = 184px;
+$right_arrow_white_2x_offset_x = -224px;
+$right_arrow_white_2x_offset_y = -184px;
+$right_arrow_white_2x_width = 18px;
+$right_arrow_white_2x_height = 22px;
+$right_arrow_white_2x_total_width = 284px;
+$right_arrow_white_2x_total_height = 264px;
+$right_arrow_white_2x_image = '../images/sprite-common-2x.png';
+$right_arrow_white_2x = 224px 184px -224px -184px 18px 22px 284px 264px '../images/sprite-common-2x.png' 'right-arrow-white-2x';
+$step_a_2x_name = 'step-a-2x';
+$step_a_2x_x = 156px;
+$step_a_2x_y = 68px;
+$step_a_2x_offset_x = -156px;
+$step_a_2x_offset_y = -68px;
+$step_a_2x_width = 60px;
+$step_a_2x_height = 60px;
+$step_a_2x_total_width = 284px;
+$step_a_2x_total_height = 264px;
+$step_a_2x_image = '../images/sprite-common-2x.png';
+$step_a_2x = 156px 68px -156px -68px 60px 60px 284px 264px '../images/sprite-common-2x.png' 'step-a-2x';
+$step_a_active_2x_name = 'step-a-active-2x';
+$step_a_active_2x_x = 0px;
+$step_a_active_2x_y = 156px;
+$step_a_active_2x_offset_x = 0px;
+$step_a_active_2x_offset_y = -156px;
+$step_a_active_2x_width = 60px;
+$step_a_active_2x_height = 60px;
+$step_a_active_2x_total_width = 284px;
+$step_a_active_2x_total_height = 264px;
+$step_a_active_2x_image = '../images/sprite-common-2x.png';
+$step_a_active_2x = 0px 156px 0px -156px 60px 60px 284px 264px '../images/sprite-common-2x.png' 'step-a-active-2x';
+$step_b_2x_name = 'step-b-2x';
+$step_b_2x_x = 224px;
+$step_b_2x_y = 68px;
+$step_b_2x_offset_x = -224px;
+$step_b_2x_offset_y = -68px;
+$step_b_2x_width = 60px;
+$step_b_2x_height = 60px;
+$step_b_2x_total_width = 284px;
+$step_b_2x_total_height = 264px;
+$step_b_2x_image = '../images/sprite-common-2x.png';
+$step_b_2x = 224px 68px -224px -68px 60px 60px 284px 264px '../images/sprite-common-2x.png' 'step-b-2x';
+$step_b_active_2x_name = 'step-b-active-2x';
+$step_b_active_2x_x = 136px;
+$step_b_active_2x_y = 156px;
+$step_b_active_2x_offset_x = -136px;
+$step_b_active_2x_offset_y = -156px;
+$step_b_active_2x_width = 60px;
+$step_b_active_2x_height = 60px;
+$step_b_active_2x_total_width = 284px;
+$step_b_active_2x_total_height = 264px;
+$step_b_active_2x_image = '../images/sprite-common-2x.png';
+$step_b_active_2x = 136px 156px -136px -156px 60px 60px 284px 264px '../images/sprite-common-2x.png' 'step-b-active-2x';
+$step_c_2x_name = 'step-c-2x';
+$step_c_2x_x = 224px;
+$step_c_2x_y = 0px;
+$step_c_2x_offset_x = -224px;
+$step_c_2x_offset_y = 0px;
+$step_c_2x_width = 60px;
+$step_c_2x_height = 60px;
+$step_c_2x_total_width = 284px;
+$step_c_2x_total_height = 264px;
+$step_c_2x_image = '../images/sprite-common-2x.png';
+$step_c_2x = 224px 0px -224px 0px 60px 60px 284px 264px '../images/sprite-common-2x.png' 'step-c-2x';
+$step_c_active_2x_name = 'step-c-active-2x';
+$step_c_active_2x_x = 68px;
+$step_c_active_2x_y = 156px;
+$step_c_active_2x_offset_x = -68px;
+$step_c_active_2x_offset_y = -156px;
+$step_c_active_2x_width = 60px;
+$step_c_active_2x_height = 60px;
+$step_c_active_2x_total_width = 284px;
+$step_c_active_2x_total_height = 264px;
+$step_c_active_2x_image = '../images/sprite-common-2x.png';
+$step_c_active_2x = 68px 156px -68px -156px 60px 60px 284px 264px '../images/sprite-common-2x.png' 'step-c-active-2x';
+$step_d_2x_name = 'step-d-2x';
+$step_d_2x_x = 156px;
+$step_d_2x_y = 0px;
+$step_d_2x_offset_x = -156px;
+$step_d_2x_offset_y = 0px;
+$step_d_2x_width = 60px;
+$step_d_2x_height = 60px;
+$step_d_2x_total_width = 284px;
+$step_d_2x_total_height = 264px;
+$step_d_2x_image = '../images/sprite-common-2x.png';
+$step_d_2x = 156px 0px -156px 0px 60px 60px 284px 264px '../images/sprite-common-2x.png' 'step-d-2x';
+$step_d_active_2x_name = 'step-d-active-2x';
+$step_d_active_2x_x = 68px;
+$step_d_active_2x_y = 88px;
+$step_d_active_2x_offset_x = -68px;
+$step_d_active_2x_offset_y = -88px;
+$step_d_active_2x_width = 60px;
+$step_d_active_2x_height = 60px;
+$step_d_active_2x_total_width = 284px;
+$step_d_active_2x_total_height = 264px;
+$step_d_active_2x_image = '../images/sprite-common-2x.png';
+$step_d_active_2x = 68px 88px -68px -88px 60px 60px 284px 264px '../images/sprite-common-2x.png' 'step-d-active-2x';
+$step_e_2x_name = 'step-e-2x';
+$step_e_2x_x = 0px;
+$step_e_2x_y = 88px;
+$step_e_2x_offset_x = 0px;
+$step_e_2x_offset_y = -88px;
+$step_e_2x_width = 60px;
+$step_e_2x_height = 60px;
+$step_e_2x_total_width = 284px;
+$step_e_2x_total_height = 264px;
+$step_e_2x_image = '../images/sprite-common-2x.png';
+$step_e_2x = 0px 88px 0px -88px 60px 60px 284px 264px '../images/sprite-common-2x.png' 'step-e-2x';
+$step_e_active_2x_name = 'step-e-active-2x';
+$step_e_active_2x_x = 88px;
+$step_e_active_2x_y = 0px;
+$step_e_active_2x_offset_x = -88px;
+$step_e_active_2x_offset_y = 0px;
+$step_e_active_2x_width = 60px;
+$step_e_active_2x_height = 60px;
+$step_e_active_2x_total_width = 284px;
+$step_e_active_2x_total_height = 264px;
+$step_e_active_2x_image = '../images/sprite-common-2x.png';
+$step_e_active_2x = 88px 0px -88px 0px 60px 60px 284px 264px '../images/sprite-common-2x.png' 'step-e-active-2x';
+$spritesheet_width = 142px;
+$spritesheet_height = 132px;
+$spritesheet_image = '../images/sprite-common.png';
+$spritesheet_sprites = $badge_step_a $checkbox_checked $checkbox $phone $right_arrow_white $step_a_active $step_a $step_b_active $step_b $step_c_active $step_c $step_d_active $step_d $step_e_active $step_e;
+$spritesheet = 142px 132px '../images/sprite-common.png' $spritesheet_sprites;
+$retina_spritesheet_width = 284px;
+$retina_spritesheet_height = 264px;
+$retina_spritesheet_image = '../images/sprite-common-2x.png';
+$retina_spritesheet_sprites = $badge_step_a_2x $checkbox_2x $checkbox_checked_2x $phone_2x $right_arrow_white_2x $step_a_2x $step_a_active_2x $step_b_2x $step_b_active_2x $step_c_2x $step_c_active_2x $step_d_2x $step_d_active_2x $step_e_2x $step_e_active_2x;
+$retina_spritesheet = 284px 264px '../images/sprite-common-2x.png' $retina_spritesheet_sprites;
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retinaSprite` and `retinaSprites`.
+*/
+$badge_step_a_group_name = 'badge-step-a';
+$badge_step_a_group = 'badge-step-a' $badge_step_a $badge_step_a_2x;
+$checkbox_checked_group_name = 'checkbox-checked';
+$checkbox_checked_group = 'checkbox-checked' $checkbox_checked $checkbox_2x;
+$checkbox_group_name = 'checkbox';
+$checkbox_group = 'checkbox' $checkbox $checkbox_checked_2x;
+$phone_group_name = 'phone';
+$phone_group = 'phone' $phone $phone_2x;
+$right_arrow_white_group_name = 'right-arrow-white';
+$right_arrow_white_group = 'right-arrow-white' $right_arrow_white $right_arrow_white_2x;
+$step_a_active_group_name = 'step-a-active';
+$step_a_active_group = 'step-a-active' $step_a_active $step_a_2x;
+$step_a_group_name = 'step-a';
+$step_a_group = 'step-a' $step_a $step_a_active_2x;
+$step_b_active_group_name = 'step-b-active';
+$step_b_active_group = 'step-b-active' $step_b_active $step_b_2x;
+$step_b_group_name = 'step-b';
+$step_b_group = 'step-b' $step_b $step_b_active_2x;
+$step_c_active_group_name = 'step-c-active';
+$step_c_active_group = 'step-c-active' $step_c_active $step_c_2x;
+$step_c_group_name = 'step-c';
+$step_c_group = 'step-c' $step_c $step_c_active_2x;
+$step_d_active_group_name = 'step-d-active';
+$step_d_active_group = 'step-d-active' $step_d_active $step_d_2x;
+$step_d_group_name = 'step-d';
+$step_d_group = 'step-d' $step_d $step_d_active_2x;
+$step_e_active_group_name = 'step-e-active';
+$step_e_active_group = 'step-e-active' $step_e_active $step_e_2x;
+$step_e_group_name = 'step-e';
+$step_e_group = 'step-e' $step_e $step_e_active_2x;
+$retina_groups = $badge_step_a_group $checkbox_checked_group $checkbox_group $phone_group $right_arrow_white_group $step_a_active_group $step_a_group $step_b_active_group $step_b_group $step_c_active_group $step_c_group $step_d_active_group $step_d_group $step_e_active_group $step_e_group;
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  spriteWidth($icon_home)
+}
+
+.icon-email {
+  sprite($icon_email)
+}
+*/
+spriteWidth($sprite) {
+  width: $sprite[4];
+}
+
+spriteHeight($sprite) {
+  height: $sprite[5];
+}
+
+spritePosition($sprite) {
+  background-position: $sprite[2] $sprite[3];
+}
+
+spriteImage($sprite) {
+  background-image: url($sprite[8]);
+}
+
+sprite($sprite) {
+  spriteImage($sprite)
+  spritePosition($sprite)
+  spriteWidth($sprite)
+  spriteHeight($sprite)
+}
+
+/*
+The `retinaSprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon_home_group = 'icon-home' $icon_home $icon_home_2x;
+
+.icon-home {
+  retinaSprite($icon_home_group)
+}
+*/
+spriteBackgroundSize($sprite) {
+  background-size: $sprite[6] $sprite[7];
+}
+
+retinaSprite($retina_group) {
+  $normal_sprite = $retina_group[1];
+  $retina_sprite = $retina_group[2];
+  sprite($normal_sprite)
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    spriteImage($retina_sprite)
+    spriteBackgroundSize($normal_sprite)
+  }
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of Stylus
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+sprites($spritesheet_sprites);
+*/
+sprites($sprites) {
+  for $sprite in $sprites {
+    $sprite_name = $sprite[9];
+    .{$sprite_name} {
+      sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retinaSprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in Stylus
+
+retinaSprites($retina_groups);
+*/
+retinaSprites($retina_groups) {
+  for $retina_group in $retina_groups {
+    $sprite_name = $retina_group[0];
+    .{$sprite_name} {
+      retinaSprite($retina_group);
+    }
+  }
+}

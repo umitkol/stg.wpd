@@ -1,0 +1,25 @@
+.wpd-switch
+	font-size 11px
+	color $color13
+	padding-left 18px
+	line-height 28px
+	cursor pointer
+	opacity .8
+	after()
+	
+	&:after
+		font-family FontAwesome;
+		content "\f204"
+		font-size 11px
+		top 15px
+		left 0
+		line-height 0
+		
+	&:hover
+		opacity 1
+		
+	&--active
+		opacity 1
+		
+		&:after
+			content "\f205"

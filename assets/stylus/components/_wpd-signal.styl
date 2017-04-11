@@ -1,0 +1,29 @@
+.wpd-signal
+  position relative
+  width 5px
+  height 5px
+  border 1px solid $color4
+  background $color10
+  display block
+  border-radius 5px
+  margin-top 8px
+  
+  &--b
+    margin-top 2px
+  
+  &--active
+    background $color16
+    
+    &:hover
+      background $color4
+      after()
+      
+      &:after
+        font-family 'FontAwesome'
+        content "\f00d"
+        font-size 9px
+        color $color26
+        cursor pointer
+        top -3px
+        left -1px
+        line-height 1 

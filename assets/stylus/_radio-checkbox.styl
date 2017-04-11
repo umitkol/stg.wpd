@@ -1,0 +1,89 @@
+.radio
+  display:none;
+  
+  + .label 
+    font-size 12px
+    font-family Roboto
+    color $dark_gray
+
+  + .label:before
+    content: "";
+    display: inline-block;
+    vertical-align:middle;
+    margin-right: 8px;
+    line-height:18px;
+    //background-color: #fff;
+    //box-shadow: inset 0px 1px 1px rgba(0, 0, 0, .2);
+    //border-radius: 8px;
+    //border: 1px solid #f0f0f0;
+    font-family Roboto
+    cursor pointer
+    //retinaSprite($radio_regular_group) 
+  
+  &:checked
+    + .label:before
+      content: "";
+      //retinaSprite($radio_regular_checked_group) 
+      text-align:center;
+    
+  &--regular
+    + .label:before
+      line-height 11px
+      margin-right 5px
+      //retinaSprite($radio_regular_group) 
+      
+    &:checked
+      &.fancy
+        + .label
+          color #eb168c
+        
+      + .label:before
+        //retinaSprite($radio_regular_checked_group) 
+        
+  &--small-text 
+    + .label
+      font-size 11px
+      
+    + .label:before
+      position relative
+      top -1px
+
+      
+.checkbox
+  display:none;
+  
+  + .label  
+    font-size 11px
+    font-weight 700
+    color $tundora
+
+  + .label:before
+    content: "";
+    display: block;
+    float: left;
+    vertical-align:middle;
+    margin-right: 8px;
+    line-height:20px;
+    cursor pointer
+    retinaSprite($checkbox_group)  
+  
+  &:checked
+    + .label:before
+      content: "";
+      retinaSprite($checkbox_checked_group) 
+      text-align:center;
+
+.checkbox-list
+  li 
+    clearfix()
+    padding-bottom 5px
+    
+  &--horizontal
+    li  
+      float left
+      margin-right 15px
+      
+      &:last-child
+        margin-right 0
+    
+

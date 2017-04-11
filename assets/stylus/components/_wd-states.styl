@@ -1,0 +1,36 @@
+html.wf-design-mode *
+  cursor default
+  user-drag none
+
+[contenteditable="true"]
+  outline none
+  box-shadow $box_shadow_light
+  user-select text
+  
+.wd-updating:focus,
+.wd-selected:focus,
+.wd-focused
+  outline 0
+  
+.wd-empty
+  padding-bottom 75px
+  padding-right 75px
+  font-size 0
+  line-height 0
+  vertical-align middle
+  outline 1px dashed #555 !important
+  outline-offset -1px !important
+  box-shadow inset 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 4px rgba(255, 255, 255, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.3)
+
+  &[data-w-id="workspace"]
+    padding 0
+    height 100px
+    display table
+    font-size inherit
+    width 100%
+
+    .wd-empty-workspace-cell
+      display table-cell
+      vertical-align middle
+      text-align center
+      cursor pointer 

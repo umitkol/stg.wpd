@@ -1,0 +1,118 @@
+.wpd-toggle
+	&__pane
+		display none
+		border-bottom 1px solid $color4
+		
+		&--b
+			border 0
+			padding 0 !important
+	
+	&__header
+		height 28px
+		background $color20
+		border-bottom 1px solid $color4
+		position relative
+		
+		a
+			display block
+			padding 0 20px
+			line-height 28px
+			color $color13
+			text-decoration none
+			font-size 13px
+			after()
+			
+			&:after
+				font-family FontAwesome;
+				content "\f0da"
+				left 8px
+				top 0
+				line-height 27px
+				
+			span
+				display inline-block
+				text-shadow $text_shadow
+				overflow hidden
+				
+				&:before
+					content ""
+					width 4px
+					height 4px
+					background $color16
+					border 1px solid $color4
+					border-radius 3px
+					opacity 0
+					transition opacity 400ms
+					box-sizing content-box
+					margin-left 3px
+					float right
+					position relative
+					top 13px
+				
+				&:after
+					content ""
+					width 4px
+					height 4px
+					background $color16
+					border 1px solid $color4
+					border-radius 3px
+					opacity 0
+					transition opacity 400ms
+					box-sizing content-box
+					margin-left 3px
+					float right
+					position relative
+					top 13px
+					
+		.wpd-switch
+			display none
+			position absolute
+			top 0
+			right 10px 
+			z-index 2
+					
+		&--pending
+			a
+				span:before
+					opacity 1
+					
+		&--global
+			a
+				span:after
+					background $color23
+					opacity 1
+				
+		&--active
+			.wpd-switch
+				display block
+				
+			a:after
+				content "\f0dd"
+				left 7px
+				line-height 22px
+				
+			&+.wpd-toggle__pane
+				display block
+				
+		&:first-child
+			border-top 1px solid $color4
+			
+		&--b
+			border-bottom 1px solid $color4
+			border-top 1px solid $color4
+			border-right 0
+			margin-top -1px
+			z-index 10
+			
+	&__sep
+		.wpd-toggle__header:first-child
+			border-top none
+			
+		&:first-child
+			.wpd-toggle__header
+				border-top 1px solid $color4
+				
+
+.wpd-toggle__header.wpd-toggle__header--b:first-child
+	border-top 0
+	margin-top 0

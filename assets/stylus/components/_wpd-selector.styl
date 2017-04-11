@@ -1,0 +1,510 @@
+.wpd-selector
+	position relative
+	z-index $selector_zIndex
+	box-shadow 0px 3px 5px 0px rgba(0,0,0,0.2)
+
+	&-info &__tag
+		margin-right 0 
+	
+	&__wrap
+		position relative
+	
+	&__title-block
+		clearfix()
+	
+	&__label
+		float left
+		font-size 11px
+		color $color13
+		line-height 1.2em
+		text-shadow $text_shadow
+		margin-bottom 6px  
+		
+		&--b
+			color $color23
+		
+	&__states-dropdown
+		float right
+		width 55px
+		height 15px
+		line-height 15px
+		font-size 11px
+		color $color13
+		position relative
+		z-index $dropdown_zIndex + 5
+		
+		&__unit
+			position absolute
+			left auto
+			right 0
+			top -1px
+			color $color13
+			
+			.output
+				font-size 9px
+				line-height 15px
+				height 15px
+				width 15px
+				text-align center
+				float right
+				padding 0 4px
+				border-radius 3px
+				position relative
+				background: linear-gradient(top, $color15, $color10);
+				box-sizing border-box
+				border 1px solid $color5_4
+				
+				&:hover
+					background $color15
+					color $color12
+					cursor pointer
+				
+			ul
+				display none
+				border 1px solid $color4
+				border-radius 3px
+				border-top-right-radius 0
+				background $color1
+				position absolute
+				z-index $dropdown_zIndex + 5
+				top 15px
+				right 0
+				
+				li 
+					color $color13
+					font-size 11px
+					padding 5px 7px
+					border 1px solid $color5_4
+					border-top none
+					
+					&:hover
+						background $color10
+						cursor pointer
+						
+					&:first-child
+						border-top-left-radius 2px
+						border-top-right-radius 2px
+						
+					&:last-child
+						border-bottom-left-radius 2px
+						border-bottom-right-radius 2px
+				
+			&--active
+				.output
+					opacity 1
+					background $color1
+					border 1px solid $color4
+					border-bottom none
+					border-bottom-left-radius 0
+					border-bottom-right-radius 0
+					z-index $dropdown_zIndex + 6
+					box-shadow none
+					
+				ul
+					display block
+					
+		&--passive
+			display none
+			
+	&__title-action
+		float right
+		font-size 11px
+		color $color23
+		line-height 1.2em
+		text-shadow $text_shadow
+		margin-bottom 6px
+		cursor pointer
+
+	&__state
+		float left
+		width 22px
+		height 18px
+		color $color13
+		font-size 12px
+		text-align center
+		line-height 22px
+		border 1px solid transparent
+		margin-top 1px
+		margin-left -2px
+		
+	&__placeholder
+		float left
+		color $color16
+		font-size 11px
+		padding-left 5px
+		display none
+			
+	&__input
+		position relative
+		padding-right 28px
+		height auto
+		
+		.wpd-selector__tag
+			margin-right 2px	
+			
+			&--a
+				&:hover
+					background $color18_hover
+					color $color12
+					
+			&--b
+				&:hover
+					background $color27_hover  
+					color $color12
+		
+		&--empty
+			cursor pointer
+			
+			.wpd-selector__state
+				background $color18
+				color $color12
+				border-color $color5
+				border-radius 2px
+				height 22px
+				
+			.wpd-selector__placeholder
+				display block
+				
+		&--disabled
+			cursor not-allowed
+			
+			.wpd-selector__state
+				display none
+				
+			.wpd-selector__placeholder
+				display block
+				color $color17
+				text-shadow $text_shadow
+				padding-left 0
+			
+			.wpd-selector__class-list-button
+				cursor not-allowed
+				
+				&:hover
+					color $color13
+				
+		&--no-selection
+			
+			.wpd-selector__state
+				display none
+				
+			.wpd-selector__placeholder
+				display block
+				color $color17
+				text-shadow $text_shadow
+				padding-left 0
+		
+		&--focus
+			outline none
+			box-shadow none
+			box-shadow: 0 0 1px 1px $color16_6;
+			cursor text
+			padding-right 5px
+			
+			.wpd-selector__state,
+			.wpd-selector__placeholder,
+			.wpd-selector__class-list-button,
+			.wpd-selector__edit
+				display none
+				
+		&--higher-selector
+			box-shadow 0 0 2px $color23 
+			
+			.wpd-selector__class-list-button
+				background $color23
+				color $color12
+				
+				&:hover
+					background $color23
+					color $color12
+				
+			.wpd-selector__class-list
+				background $color23 
+				color $color12
+				border-color $color23
+				
+				&:hover 
+					background $color23 
+					color $color12 
+					border-color $color23 
+			
+			&:hover
+				box-shadow 0 0 2px $color23
+
+	&__edit
+		display inline-block
+		margin-right 2px
+		color $color13
+		background: linear-gradient(top, $color15, $color10);
+		line-height 18px
+		padding 0 5px
+		font-size 11px
+		border-radius 2px
+		cursor pointer
+		box-sizing border-box
+		text-align center
+		
+		&:hover
+			background $color15
+			color $color12
+			
+		&--passive
+			display none
+				
+	&__class-list-button
+		display block
+		position absolute
+		right 0
+		top 0
+		color $color13
+		background: linear-gradient(top, $color15, $color10);
+		line-height 26px
+		font-size 11px
+		border-top-right-radius 2px
+		border-bottom-right-radius 2px
+		cursor pointer
+		box-sizing border-box
+		width 26px
+		height 100%
+		border-left 1px solid $color4
+		text-align center
+		
+		&:hover
+			background $color15
+			color $color12
+			
+		&--passive
+			display none
+			
+		&--active
+			background $color15
+			color $color12
+			cursor default
+			
+	&__class-list
+		li
+			border-bottom 1px solid $color4
+			padding 0 7px
+			line-height 32px
+			background $color1
+			cursor pointer
+			
+			&:last-child
+				border-bottom none
+				
+			.wpd-selector__state
+				margin-top 5px
+				
+			.type
+				position absolute
+				right 10px
+				top 0
+				font-size 11px
+				color $color13
+				opacity .4
+				font-weight 700
+				
+			&:hover,
+			&.active
+				background $color21
+				
+				.wpd-selector__tag
+					&--a
+						background $color18_hover
+						color $color12
+							
+					&--b
+						background $color27_hover  
+						color $color12
+							
+					&--c
+						background $color32_hover
+						color $color12
+				
+				.wpd-selector__state
+					color $color12
+					
+			&.active
+				.type
+					display none
+					
+				after()
+				
+				&:after
+					font-family 'FontAwesome'
+					content "\f00c"
+					font-size 14px
+					color $color12
+					left auto
+					right 7px
+					top 0
+					line-height 32px
+			
+	&__header
+		position relative
+		z-index $dropdown_zIndex + 1
+				
+	&__body
+		border 1px solid $color4
+		border-top none
+		border-bottom-left-radius 3px
+		border-bottom-right-radius 3px
+		box-shadow 0 1px 0 $box_shadow_color2 
+		position absolute
+		top 30px
+		left 0
+		top 100%
+		box-sizing border-box
+		width 100%
+		z-index $dropdown_zIndex
+		display none
+		
+		&--active
+			display block
+			
+	&__editable
+		display inline-block
+		outline transparent auto 5px
+		
+	&__container
+		display inline
+				
+	&__title
+		background $color3
+		color $color17
+		text-shadow $text_shadow
+		padding 0 10px
+		line-height 24px
+		font-size 10px
+		
+	&__desc
+		background $color1
+		color $color16 
+		padding 7px 10px
+		font-size 11px
+		text-shadow $text_shadow
+		line-height 1.2em
+		
+		&--editing
+			color $color13
+			
+		&--info
+			color $color13
+			border-top 1px solid $color3
+			padding-left 40px
+			position relative
+			
+			i
+				position absolute
+				left 14px
+				top 50%
+				font-size 14px
+				margin-top -7px
+				color $color28
+	
+	&__tag
+		display inline-block
+		color $color13
+		background $color8
+		line-height 18px
+		padding 0 5px
+		font-size 11px
+		border-radius 2px
+		cursor pointer
+		word-break break-all
+		position relative
+		margin-right 5px
+		
+		&--a
+			background $color18
+			
+		&--b
+			background $color27
+		
+		&--c
+			background $color32
+			
+		&--disabled
+			opacity .6
+			
+		&__target 
+			text-decoration underline
+			color $color12
+			
+		&__remove
+			display none
+			width 16px
+			height 16px
+			text-align center
+			line-height 16px
+			position absolute
+			top -8px
+			right -8px
+			z-index 20
+			color $color13
+			
+			&:hover
+				color $color12
+			
+		&:hover
+			.wpd-selector__tag__remove
+				display block
+		
+	&__tag-list
+		background $color1
+		padding 4px 0
+		
+		li
+			cursor pointer
+			padding 2px 30px 2px 10px
+			after()
+			
+			&:after
+				font-family 'FontAwesome'
+				content "\f00c"
+				left auto
+				right 10px
+				top 3px
+				font-size 14px
+				color $color13
+				display none
+				
+			&:hover
+				&:after
+					display block
+					
+				.wpd-selector__tag
+					background $color18
+					color $color12
+				
+			&.active
+				&:after
+					display block
+					
+				.wpd-selector__tag
+					background $color18
+					color $color12
+					
+	&__note
+		font-size 11px
+		color $color13
+		opacity .7
+		text-shadow $text_shadow
+		
+		i
+			font-size 13px
+			margin-right 2px
+			
+.wpd-selector-info-container
+	background #393939
+	height 100%
+	width 100%
+	position absolute
+	left 0
+	top 0
+	z-index $dropdown_zIndex
+	display none
+	
+	&--open
+		display block
+		

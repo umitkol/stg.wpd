@@ -1,0 +1,40 @@
+.button
+  display inline-block
+  text-align center
+  background none
+  border 0
+  outline 0
+  color inherit
+  /* cursor default */
+  font inherit
+  line-height normal
+  overflow visible
+  padding 0
+  box-sizing border-box
+  Dint(16px)
+  
+  &--pom
+    border-radius 2px
+    background $pomegranate
+    color $white
+    font-size 16px
+    font-weight 700
+    height 36px 
+    line-height 36px
+    padding 0 15px
+    transition background 100ms, color 100ms
+    
+    &:hover,
+    &.active
+      gradient-vertical(#ce0208, #eb190b)
+      color $white
+      
+  &--right-arrow-white
+    padding-right 37px
+    after()
+    
+    &:after
+      retinaSprite($right_arrow_white_group)
+      left auto
+      right 14px
+      top 13px

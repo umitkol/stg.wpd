@@ -1,0 +1,345 @@
+.wpd-position-handler
+  position relative
+  width 85px
+  height 84px
+  margin 0 auto
+  color $color13
+  
+  .wpd-anchor 
+    font-size 9px
+    font-family $site_font
+    
+  .wpd-label-block,
+  .wpd-label
+    font-size 9px
+    font-family $site_font
+    margin-bottom 0
+    line-height 1
+  
+  .output 
+    position absolute
+    width 100%
+    top auto
+    left 0
+    text-align center
+    
+  > .top 
+    position absolute
+    width 79px
+    height 17px
+    top 0 
+    left 3px
+    font-family: 'FontAwesome'; 
+    text-align center
+    color $color13 
+    font-size 11px
+    
+    i 
+      margin-top -1px
+      font-size 18px  
+    
+    .output
+      top -15px
+      
+      &--inside
+        top auto
+        bottom -15px
+        width 30px
+        left 50%
+        margin-left -15px 
+        text-align center
+      
+    .wpd-position-handler__button
+      retinaSprite($position_handler_top_group)
+      cursor pointer
+      
+      &:hover 
+        retinaSprite($position_handler_top_hover_group)
+        color $color12
+  
+  > .right 
+    position absolute
+    width 17px
+    height 79px
+    top 3px
+    left auto
+    right 0
+    font-family 'FontAwesome'
+    text-align center
+    color $color13
+    font-size 11px
+    
+    .output
+      width 28px
+      height 100% 
+      top 0
+      left auto
+      right -35px
+      
+      a,
+      label
+        position absolute
+        top 50%
+        margin-top -5px
+        left 0
+        
+      &--inside
+        right auto
+        left -33px
+        height 12px
+        top 50%
+        margin-top -6px
+        
+        a,
+        label
+          left auto
+          right 0
+    
+    i 
+      font-size 18px
+      position absolute
+      width 100%
+      text-align center
+      top 50%
+      left 0
+      margin-top -9px
+    
+    .wpd-position-handler__button
+      retinaSprite($position_handler_right_group)
+      cursor pointer
+      
+      &:hover 
+        retinaSprite($position_handler_right_hover_group)
+        color $color12
+
+  > .bottom 
+    position absolute
+    width 79px
+    height 17px
+    top auto
+    bottom 0
+    left 3px
+    font-family 'FontAwesome'
+    text-align center
+    color $color13
+    font-size 11px
+    
+    .desc 
+      font-family Helvetica, Arial, Tahoma, sans-serif
+      position absolute
+      left 16px
+      top 5px
+      text-shadow $text_shadow
+      color $color13
+      font-size 8px
+      z-index 3
+      opacity .6
+    
+    .output
+      bottom -15px
+      
+      &--inside
+        bottom auto
+        top -15px
+        width 30px
+        left 50%
+        margin-left -15px 
+        text-align center 
+      
+    i 
+      margin-top -1px
+      font-size 18px
+      
+    .wpd-position-handler__button
+      retinaSprite($position_handler_bottom_group)
+      cursor pointer
+      
+      &:hover 
+        retinaSprite($position_handler_bottom_hover_group)
+        color $color12
+        
+  > .left 
+    position absolute
+    width 17px
+    height 79px
+    top 3px
+    left 0
+    font-family 'FontAwesome'
+    text-align center
+    color $color13
+    font-size 11px
+    
+    .output
+      width 28px
+      height 100%
+      top 0
+      left -35px
+      
+      a,
+      label 
+        position absolute
+        top 50%
+        margin-top -5px 
+        left auto
+        right 0
+        
+      &--inside
+        left auto
+        right -33px
+        height 12px
+        top 50%
+        margin-top -6px
+        
+        a,
+        label
+          right auto
+          left 0
+    
+    i 
+      font-size 18px
+      position absolute
+      width 100%
+      text-align center
+      top 50%
+      left 0
+      margin-top -9px 
+      
+    .wpd-position-handler__button
+      retinaSprite($position_handler_left_group)
+      cursor pointer
+      
+      &:hover 
+        retinaSprite($position_handler_left_hover_group)
+        color $color12
+
+.wpd-margin-setter
+  width 165px
+  margin 25px auto
+  position relative
+  
+  > .wpd-position-handler
+    width 165px
+    height 111px
+    
+    > .top 
+      width 159px
+      
+      .wpd-position-handler__button
+        retinaSprite($position_handler_b_top_group)
+      
+        &:hover 
+          retinaSprite($position_handler_b_top_hover_group)
+        
+    > .right 
+      height 105px
+      
+      .wpd-position-handler__button
+        retinaSprite($position_handler_b_right_group)
+        
+        &:hover
+          retinaSprite($position_handler_b_right_hover_group)
+        
+    > .bottom 
+      width 159px
+      
+      .wpd-position-handler__button
+        retinaSprite($position_handler_b_bottom_group)
+        
+        &:hover 
+          retinaSprite($position_handler_b_bottom_hover_group)
+        
+    > .left 
+      height 105px
+      
+      .wpd-position-handler__button
+        retinaSprite($position_handler_b_left_group)
+        
+        &:hover
+          retinaSprite($position_handler_b_left_hover_group)
+        
+.wpd-padding-setter
+  position absolute
+  width 127px
+  height 73px
+  top 19px
+  left 19px
+  
+  > .wpd-position-handler
+    width 127px
+    height 73px
+    
+    > .top 
+      width 121px
+      
+      .output
+        top auto
+        bottom -15px
+        width 30px
+        left 50%
+        margin-left -15px 
+        text-align center
+       
+      .wpd-position-handler__button
+        retinaSprite($position_handler_c_top_group)
+      
+        &:hover
+          retinaSprite($position_handler_c_top_hover_group)
+        
+    > .right 
+      height 67px
+      
+      .output
+        right auto
+        left -35px
+        height 12px
+        top 50%
+        margin-top -6px
+        
+        a,
+        label
+          left auto
+          right 0
+      
+      .wpd-position-handler__button
+        retinaSprite($position_handler_c_right_group)
+      
+        &:hover
+          retinaSprite($position_handler_c_right_hover_group)
+        
+    > .bottom 
+      width 121px
+      
+      .output
+        bottom auto
+        top -15px
+        width 30px
+        left 50%
+        margin-left -15px 
+        text-align center 
+      
+      .wpd-position-handler__button 
+        retinaSprite($position_handler_c_bottom_group)
+      
+        &:hover
+          retinaSprite($position_handler_c_bottom_hover_group)
+        
+    > .left   
+      height 67px
+      
+      .output
+        left auto
+        right -35px
+        height 12px
+        top 50%
+        margin-top -6px
+        
+        a,
+        label
+          right auto
+          left 0
+       
+      .wpd-position-handler__button
+        retinaSprite($position_handler_c_left_group)
+      
+        &:hover
+          retinaSprite($position_handler_c_left_hover_group)

@@ -1,0 +1,190 @@
+.wpd-navigator
+	position relative
+	height 100%
+	
+	&__list
+		height calc(100% - 37px) 
+		overflow auto
+		
+		li
+			position relative
+			
+	&__item
+		display block
+		height 25px
+		border-bottom 1px solid $color4
+		border-top 1px solid $color21
+		border-right 1px solid $color4
+		font-size 11px
+		color $color13
+		line-height 24px
+		text-decoration none
+		cursor pointer
+		position relative
+		
+		i
+			font-size 9px
+			margin-right 5px
+		
+		&.hovered
+		&:hover
+			background $color17
+
+		&--error
+			background red
+
+		&--position-after:before
+		&--position-after:after
+			position absolute
+			content ''
+			left 0
+
+		&--position-after:after 
+			bottom -1px
+			height 2px
+			width 100%
+			font-size 0
+			background #388eff
+			z-index 100
+		
+		&--position-after:before
+			bottom -4px
+			width 0
+			height 0
+			border-top 5px solid transparent
+			border-left 8px solid #388eff
+			border-bottom 5px solid transparent
+			z-index 15
+			
+	&__caret
+		display inline-block
+		width 15px
+		height 20px
+		after(type=relative)
+		color $color13
+		cursor pointer
+		z-index 10
+		font-size 9px
+		text-align center
+		line-height 1
+		margin-left -15px
+		top -6px
+		
+		&:after
+			position relative
+			font-family 'FontAwesome'
+			content "\f0da"
+			top 5px
+			
+		&:hover
+			color $color12
+			
+	&__list
+		li
+			&.has-child
+				> ul
+					display none
+				
+			&.has-child.opened
+				> ul
+					display block
+					
+				> .wpd-navigator__item 
+					.wpd-navigator__caret
+						&:after
+							content "\f0d7"
+							
+			&.active
+				> .wpd-navigator__item 
+					background $color18
+				
+		> li
+			> .wpd-navigator__item
+				padding-left 20px
+				
+			ul > li 
+				> .wpd-navigator__item
+					padding-left 30px
+					
+				ul > li 
+					> .wpd-navigator__item
+						padding-left 40px
+					
+					ul > li 
+						> .wpd-navigator__item
+							padding-left 50px
+					
+						ul > li 
+							> .wpd-navigator__item
+								padding-left 60px
+					
+							ul > li 
+								> .wpd-navigator__item
+									padding-left 70px
+					
+								ul > li 
+									> .wpd-navigator__item
+										padding-left 80px
+					
+									ul > li 
+										> .wpd-navigator__item
+											padding-left 90px
+					
+										ul > li 
+											> .wpd-navigator__item
+												padding-left 100px
+					
+											ul > li 
+												> .wpd-navigator__item
+													padding-left 110px
+					
+												ul > li 
+													> .wpd-navigator__item
+														padding-left 120px
+					
+													ul > li 
+														> .wpd-navigator__item
+															padding-left 130px
+						
+														ul > li 
+															> .wpd-navigator__item
+																padding-left 140px
+							
+															ul > li 
+																> .wpd-navigator__item
+																	padding-left 150px
+
+.blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    
+    animation-name: blinker;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}

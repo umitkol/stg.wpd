@@ -1,0 +1,68 @@
+.wpd-tabs
+	position relative
+	
+	&__control-area
+		clearfix()
+		
+	&__control
+		float left
+		
+		a
+			display block
+			width 39px
+			height 34px
+			border-right 1px solid $color4
+			border-bottom 1px solid $color4
+			background $color3
+			color $color11
+			font-size 16px
+			text-decoration none
+			text-align center
+			after()
+			
+			&:after
+				font-family FontAwesome
+				display block
+				left 0
+				top 50%
+				width 100%
+				margin-top -8px
+				line-height 1
+			
+			&.style:after
+				content "\f1fc"
+			&.settings:after
+				content "\f013"
+			&.navigator:after
+				content "\f0c9"	
+			&.style-manager:after
+				content "\f292"
+			&.global-objects:after
+				content "\f1b3"				
+			&.assets:after
+				content "\f0f2"				
+			
+			&:hover
+				&:after
+					color $color12
+					
+		&--active
+			a
+				background $color1
+				border-bottom-color $color1
+				
+				&:after
+					color $color12
+	
+	&__pane
+		position relative
+		
+	&__pane-content
+		display none
+		background $color1
+		color $color13
+		font-size 11px
+		
+		&--active
+			display block
+				

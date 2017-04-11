@@ -1,0 +1,86 @@
+::-webkit-scrollbar
+  width 10px
+  height 10px
+  
+::-webkit-scrollbar-track 
+  background-color $color5
+  //border-left 1px solid $color2
+    
+::-webkit-scrollbar-track:horizontal
+  border-top 1px solid $color4
+
+::-webkit-scrollbar-thumb
+  background-color $color10
+  //border-left 1px solid $color2
+    
+::-webkit-scrollbar-thumb:horizontal
+  border none
+  border-top 1px solid $color4
+  border-left 1px solid $color4
+  
+::-webkit-scrollbar-corner  
+  display none
+  
+::-webkit-scrollbar-button {
+  display block
+  border-left 1px solid $color10
+  border-top 1px solid $color5
+  border-bottom 1px solid $color5
+  width 10px
+  height 10px
+  position relative
+  background-color #636363
+  background-image url(../images/scrollbars-sprite.png)
+  background-repeat no-repeat
+  background-color $color10
+  border-style solid
+  box-shadow inset 0px 0px 1px 1px rgba(200, 200, 200, 0.1)
+}
+::-webkit-scrollbar-button:hover {
+  background-color $color15 
+}
+::-webkit-scrollbar-button:disabled {
+  opacity .7
+}
+::-webkit-scrollbar-button:vertical {
+  background-position-x -10px
+}
+::-webkit-scrollbar-button:vertical:hover {
+  background-position-x -20px
+}
+::-webkit-scrollbar-button:vertical:disabled {
+  background-position-x 0px
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  border-width 0px 0px 1px 1px
+  background-position-y 0px
+}
+::-webkit-scrollbar-button:vertical:increment {
+  border-width 1px 0px 0px 1px
+  background-position-y -10px
+}
+
+::-webkit-scrollbar-button:horizontal {
+  background-position-y -20px
+}
+::-webkit-scrollbar-button:horizontal:hover {
+  background-position-x -20px
+}
+::-webkit-scrollbar-button:horizontal:disabled {
+  background-position-x 0px
+}
+::-webkit-scrollbar-button:horizontal:decrement {
+  border-width 1px 0 0 0
+  background-position-y -20px
+  background-position-x -10px
+}
+::-webkit-scrollbar-button:horizontal:increment {
+  border-width 1px 0px 0px 1px
+  background-position-y -30px
+  background-position-x -10px
+}
+
+::-webkit-scrollbar-button:start:increment,
+::-webkit-scrollbar-button:end:decrement {
+  display none 
+}

@@ -1,0 +1,104 @@
+/***********************************************************
+
+CUSTOM UPLOAD
+
+***********************************************************/
+.file-input-container {
+}
+
+.customfile-input {
+  position: absolute;
+  height: 100px !important;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  opacity 0
+  z-index: 999;
+}
+
+.customfile {
+  position absolute
+  right 0
+  top 0
+  width 90px
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing(border-box);
+  display: inline-block;
+  font-size: 18px;
+  height: 40px;
+  margin: 0;
+  overflow hidden
+
+  &:focus {
+    background-color: #fff;
+    outline: 0;
+  }
+
+  &[disabled="disabled"] {
+    box-shadow(none);
+    background-color: $light_grey;
+    border: none;
+    color: $dark_grey;
+    font-size: 16px;
+  }
+
+  &.LV_invalid_field, .parsley-error {
+    border: 1px solid $error;
+  }
+}
+
+.customfile-disabled {
+  box-shadow(none);
+  background-color: $light_grey;
+  border: none;
+  color: $dark_grey;
+  font-size: 16px;
+}
+
+.customfile-feedback {
+  display: none;
+  margin: 1px 1px 1px 5px;
+  padding: .7em .6em 0 .6em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.customfile-feedback-populated {
+  color: #0000;
+}
+
+.customfile-button {
+  float: right;
+  Gotham(14px, 400);
+  background: $horizon;
+  border: 0;
+  color: $white;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
+  vertical-align: top;
+  width: 90px;
+  transition background-color 100ms
+}
+
+.customfile-hover {
+  .customfile-button {
+    background: #506989;
+    color: $white;
+  }
+}
+
+.customfile-focus {
+  background-color: #ffffff;
+  outline: 0 none;
+}
+
+.custom-file-container__inner
+  padding-right 100px
+  position relative

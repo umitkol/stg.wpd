@@ -1,0 +1,232 @@
+.wpd-list
+	&--a
+		li
+			position relative
+			font-size 11px
+			color $color13
+			margin-bottom 5px
+			
+			&:last-child
+				margin-bottom 0
+		
+			i
+				margin-right 3px
+				
+	&--b
+		li
+			list-style none
+			position relative
+			font-size 11px
+			color $color13
+			padding-left 24px
+			line-height 22px
+		
+			i
+				position absolute
+				top 4px
+				left 0
+				font-size 14px
+				width 18px
+				text-align center
+				
+	&--c
+		clearfix()
+		display inline-block
+		
+		li
+			float left
+			display inline-block
+			height 34px
+			line-height 34px
+			min-width 35px
+			background $color1
+			color $color13
+			font-size 23px
+			text-align center
+			position relative
+			border-color $color4
+			border-left 1px solid $color4
+			border-right none
+			border-bottom none
+			border-top none
+			text-decoration none
+			padding 0 8px
+			box-sizing border-box
+			
+			&.border-right
+				border-right 1px solid $color4
+			
+			a, span
+				float left
+				margin 0 2px
+				font-size 12px
+				background $color1
+				color $color13
+				text-decoration none
+								
+			i
+				font-size 15px
+				
+			a
+				cursor pointer
+				
+				&:hover
+					color $color12
+				
+				&.history-navigation
+					cursor default
+					color $color13
+					
+					&:hover
+						color $color13
+					
+					&.active
+						color $color12
+						cursor pointer
+	
+	&--d
+		li
+			list-style none
+			position relative
+			
+			a
+				font-size 20px
+				display block
+				padding 7px 0
+				color $color13
+				text-decoration none
+				text-align center
+				
+				i
+					display inline-block
+				
+				&:hover,
+				&:active
+					color $color12
+					
+			&.active
+				a
+					color $color12
+					
+	&--e
+		li
+			list-style none
+			position relative
+			
+			a,
+			span
+				display block
+				font-size 20px
+				padding 7px 0
+				color $color13
+				text-decoration none
+				text-align center
+				after()
+				before()
+				
+				&:after
+					height 1px
+					width 18px
+					background $color4
+					top 0
+					left 50%
+					margin-left -9px
+			
+			i
+				display inline-block
+				
+			&:first-child
+				a,span
+					&:after
+						display none
+				
+			&:last-child
+				a, span
+					&:before
+						height 1px
+						width 18px
+						background $color4
+						top auto
+						bottom 0
+						left 50%
+						margin-left -9px
+				
+			&:hover
+				color $color12
+				
+				a
+					color $color12
+					
+			&.active
+				width 34px
+				background $color10
+				border 1px solid $color4
+				border-right-color $color10
+				border-top-left-radius 2px
+				border-bottom-left-radius 2px
+				color $color12
+				
+				a, span
+					padding 6px 0
+					color $color12
+					
+					&:after,
+					&:before
+						display none
+						
+				&.active + li
+					a, span
+						&:after
+							display none
+							
+	&--f
+		li
+			.wpd-square-box
+				border 1px solid $color4
+				border-top 0
+				border-left 0
+				height 82px
+				background $color1
+				cursor pointer
+				transition background 100ms
+				
+				&__icon
+					height 60px
+					font-size 45px
+					line-height 65px
+					color $color13
+					text-align center
+					
+					i 
+						position relative
+						top 4px
+				
+				&__title
+					height 20px
+					font-size 12px 
+					line-height 1
+					color $color13
+					text-align center
+					text-shadow $text_shadow
+					opacity .7
+					
+				&:hover 
+					background $color29
+					
+					.wpd-square-box__icon,
+					.wpd-square-box__title
+						color $color12
+						opacity 1
+				
+			&:nth-child(3n)
+				.wpd-square-box
+					border-right 0
+	
+
+					
+
+				
+			
+				
+
+				
